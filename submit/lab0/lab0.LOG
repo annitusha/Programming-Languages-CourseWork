@@ -1,0 +1,181 @@
+Script started on 2023-08-24 16:36:59-04:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="190" LINES="44"]
+[?2004hakozina2@n01-31:~/tmp/lab0$ ls ~/.ssh
+[?2004lauthorized_keys  id_rsa  id_rsa.pub  known_hosts
+[?2004hakozina2@n01-31:~/tmp/lab0$ ssh-copy-id akozina2@remote
+[?2004l/usr/bin/ssh-copy-id: INFO: Source of key(s) to be installed: "/home/akozina2/.ssh/id_rsa.pub"
+/usr/bin/ssh-copy-id: INFO: attempting to log in with the new key(s), to filter out any that are already installed
+
+/usr/bin/ssh-copy-id: WARNING: All keys were skipped because they already exist on the remote system.
+		(if you think this is a mistake, you may want to use -f option)
+
+[?2004hakozina2@n01-31:~/tmp/lab0$ cd ~
+[?2004l[?2004hakozina2@n01-31:~$ git clonw[Ke ssh://akozina2@remote.cs.binghamton.edu/~UMRIGAR/GIT-REPOS/CS471[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kumrigar/git-repos/cs471.git
+[?2004lCloning into 'cs471'...
+remote: Enumerating objects: 125, done.[K
+remote: Counting objects:   0% (1/125)[Kremote: Counting objects:   1% (2/125)[Kremote: Counting objects:   2% (3/125)[Kremote: Counting objects:   3% (4/125)[Kremote: Counting objects:   4% (5/125)[Kremote: Counting objects:   5% (7/125)[Kremote: Counting objects:   6% (8/125)[Kremote: Counting objects:   7% (9/125)[Kremote: Counting objects:   8% (10/125)[Kremote: Counting objects:   9% (12/125)[Kremote: Counting objects:  10% (13/125)[Kremote: Counting objects:  11% (14/125)[Kremote: Counting objects:  12% (15/125)[Kremote: Counting objects:  13% (17/125)[Kremote: Counting objects:  14% (18/125)[Kremote: Counting objects:  15% (19/125)[Kremote: Counting objects:  16% (20/125)[Kremote: Counting objects:  17% (22/125)[Kremote: Counting objects:  18% (23/125)[Kremote: Counting objects:  19% (24/125)[Kremote: Counting objects:  20% (25/125)[Kremote: Counting objects:  21% (27/125)[Kremote: Counting objects:  22% (28/125)[Kremote: Counting objects:  23% (29/125)[Kremote: Counting objects:  24% (30/125)[Kremote: Counting objects:  25% (32/125)[Kremote: Counting objects:  26% (33/125)[Kremote: Counting objects:  27% (34/125)[Kremote: Counting objects:  28% (35/125)[Kremote: Counting objects:  29% (37/125)[Kremote: Counting objects:  30% (38/125)[Kremote: Counting objects:  31% (39/125)[Kremote: Counting objects:  32% (40/125)[Kremote: Counting objects:  33% (42/125)[Kremote: Counting objects:  34% (43/125)[Kremote: Counting objects:  35% (44/125)[Kremote: Counting objects:  36% (45/125)[Kremote: Counting objects:  37% (47/125)[Kremote: Counting objects:  38% (48/125)[Kremote: Counting objects:  39% (49/125)[Kremote: Counting objects:  40% (50/125)[Kremote: Counting objects:  41% (52/125)[Kremote: Counting objects:  42% (53/125)[Kremote: Counting objects:  43% (54/125)[Kremote: Counting objects:  44% (55/125)[Kremote: Counting objects:  45% (57/125)[Kremote: Counting objects:  46% (58/125)[Kremote: Counting objects:  47% (59/125)[Kremote: Counting objects:  48% (60/125)[Kremote: Counting objects:  49% (62/125)[Kremote: Counting objects:  50% (63/125)[Kremote: Counting objects:  51% (64/125)[Kremote: Counting objects:  52% (65/125)[Kremote: Counting objects:  53% (67/125)[Kremote: Counting objects:  54% (68/125)[Kremote: Counting objects:  55% (69/125)[Kremote: Counting objects:  56% (70/125)[Kremote: Counting objects:  57% (72/125)[Kremote: Counting objects:  58% (73/125)[Kremote: Counting objects:  59% (74/125)[Kremote: Counting objects:  60% (75/125)[Kremote: Counting objects:  61% (77/125)[Kremote: Counting objects:  62% (78/125)[Kremote: Counting objects:  63% (79/125)[Kremote: Counting objects:  64% (80/125)[Kremote: Counting objects:  65% (82/125)[Kremote: Counting objects:  66% (83/125)[Kremote: Counting objects:  67% (84/125)[Kremote: Counting objects:  68% (85/125)[Kremote: Counting objects:  69% (87/125)[Kremote: Counting objects:  70% (88/125)[Kremote: Counting objects:  71% (89/125)[Kremote: Counting objects:  72% (90/125)[Kremote: Counting objects:  73% (92/125)[Kremote: Counting objects:  74% (93/125)[Kremote: Counting objects:  75% (94/125)[Kremote: Counting objects:  76% (95/125)[Kremote: Counting objects:  77% (97/125)[Kremote: Counting objects:  78% (98/125)[Kremote: Counting objects:  79% (99/125)[Kremote: Counting objects:  80% (100/125)[Kremote: Counting objects:  81% (102/125)[Kremote: Counting objects:  82% (103/125)[Kremote: Counting objects:  83% (104/125)[Kremote: Counting objects:  84% (105/125)[Kremote: Counting objects:  85% (107/125)[Kremote: Counting objects:  86% (108/125)[Kremote: Counting objects:  87% (109/125)[Kremote: Counting objects:  88% (110/125)[Kremote: Counting objects:  89% (112/125)[Kremote: Counting objects:  90% (113/125)[Kremote: Counting objects:  91% (114/125)[Kremote: Counting objects:  92% (115/125)[Kremote: Counting objects:  93% (117/125)[Kremote: Counting objects:  94% (118/125)[Kremote: Counting objects:  95% (119/125)[Kremote: Counting objects:  96% (120/125)[Kremote: Counting objects:  97% (122/125)[Kremote: Counting objects:  98% (123/125)[Kremote: Counting objects:  99% (124/125)[Kremote: Counting objects: 100% (125/125)[Kremote: Counting objects: 100% (125/125), done.[K
+remote: Compressing objects:   0% (1/118)[Kremote: Compressing objects:   1% (2/118)[Kremote: Compressing objects:   2% (3/118)[Kremote: Compressing objects:   3% (4/118)[Kremote: Compressing objects:   4% (5/118)[Kremote: Compressing objects:   5% (6/118)[Kremote: Compressing objects:   6% (8/118)[Kremote: Compressing objects:   7% (9/118)[Kremote: Compressing objects:   8% (10/118)[Kremote: Compressing objects:   9% (11/118)[Kremote: Compressing objects:  10% (12/118)[Kremote: Compressing objects:  11% (13/118)[Kremote: Compressing objects:  12% (15/118)[Kremote: Compressing objects:  13% (16/118)[Kremote: Compressing objects:  14% (17/118)[Kremote: Compressing objects:  15% (18/118)[Kremote: Compressing objects:  16% (19/118)[Kremote: Compressing objects:  17% (21/118)[Kremote: Compressing objects:  18% (22/118)[Kremote: Compressing objects:  19% (23/118)[Kremote: Compressing objects:  20% (24/118)[Kremote: Compressing objects:  21% (25/118)[Kremote: Compressing objects:  22% (26/118)[Kremote: Compressing objects:  23% (28/118)[Kremote: Compressing objects:  24% (29/118)[Kremote: Compressing objects:  25% (30/118)[Kremote: Compressing objects:  26% (31/118)[Kremote: Compressing objects:  27% (32/118)[Kremote: Compressing objects:  28% (34/118)[Kremote: Compressing objects:  29% (35/118)[Kremote: Compressing objects:  30% (36/118)[Kremote: Compressing objects:  31% (37/118)[Kremote: Compressing objects:  32% (38/118)[Kremote: Compressing objects:  33% (39/118)[Kremote: Compressing objects:  34% (41/118)[Kremote: Compressing objects:  35% (42/118)[Kremote: Compressing objects:  36% (43/118)[Kremote: Compressing objects:  37% (44/118)[Kremote: Compressing objects:  38% (45/118)[Kremote: Compressing objects:  39% (47/118)[Kremote: Compressing objects:  40% (48/118)[Kremote: Compressing objects:  41% (49/118)[Kremote: Compressing objects:  42% (50/118)[Kremote: Compressing objects:  43% (51/118)[Kremote: Compressing objects:  44% (52/118)[Kremote: Compressing objects:  45% (54/118)[Kremote: Compressing objects:  46% (55/118)[Kremote: Compressing objects:  47% (56/118)[Kremote: Compressing objects:  48% (57/118)[Kremote: Compressing objects:  49% (58/118)[Kremote: Compressing objects:  50% (59/118)[Kremote: Compressing objects:  51% (61/118)[Kremote: Compressing objects:  52% (62/118)[Kremote: Compressing objects:  53% (63/118)[Kremote: Compressing objects:  54% (64/118)[Kremote: Compressing objects:  55% (65/118)[Kremote: Compressing objects:  56% (67/118)[Kremote: Compressing objects:  57% (68/118)[Kremote: Compressing objects:  58% (69/118)[Kremote: Compressing objects:  59% (70/118)[Kremote: Compressing objects:  60% (71/118)[Kremote: Compressing objects:  61% (72/118)[Kremote: Compressing objects:  62% (74/118)[Kremote: Compressing objects:  63% (75/118)[Kremote: Compressing objects:  64% (76/118)[Kremote: Compressing objects:  65% (77/118)[Kremote: Compressing objects:  66% (78/118)[Kremote: Compressing objects:  67% (80/118)[Kremote: Compressing objects:  68% (81/118)[Kremote: Compressing objects:  69% (82/118)[Kremote: Compressing objects:  70% (83/118)[Kremote: Compressing objects:  71% (84/118)[Kremote: Compressing objects:  72% (85/118)[Kremote: Compressing objects:  73% (87/118)[Kremote: Compressing objects:  74% (88/118)[Kremote: Compressing objects:  75% (89/118)[Kremote: Compressing objects:  76% (90/118)[Kremote: Compressing objects:  77% (91/118)[Kremote: Compressing objects:  78% (93/118)[Kremote: Compressing objects:  79% (94/118)[Kremote: Compressing objects:  80% (95/118)[Kremote: Compressing objects:  81% (96/118)[Kremote: Compressing objects:  82% (97/118)[Kremote: Compressing objects:  83% (98/118)[Kremote: Compressing objects:  84% (100/118)[Kremote: Compressing objects:  85% (101/118)[Kremote: Compressing objects:  86% (102/118)[Kremote: Compressing objects:  87% (103/118)[Kremote: Compressing objects:  88% (104/118)[Kremote: Compressing objects:  89% (106/118)[Kremote: Compressing objects:  90% (107/118)[Kremote: Compressing objects:  91% (108/118)[Kremote: Compressing objects:  92% (109/118)[Kremote: Compressing objects:  93% (110/118)[Kremote: Compressing objects:  94% (111/118)[Kremote: Compressing objects:  95% (113/118)[Kremote: Compressing objects:  96% (114/118)[Kremote: Compressing objects:  97% (115/118)[Kremote: Compressing objects:  98% (116/118)[Kremote: Compressing objects:  99% (117/118)[Kremote: Compressing objects: 100% (118/118)[Kremote: Compressing objects: 100% (118/118), done.[K
+Receiving objects:   0% (1/125)Receiving objects:   1% (2/125)Receiving objects:   2% (3/125)Receiving objects:   3% (4/125)Receiving objects:   4% (5/125)Receiving objects:   5% (7/125)Receiving objects:   6% (8/125)Receiving objects:   7% (9/125)Receiving objects:   8% (10/125)Receiving objects:   9% (12/125)Receiving objects:  10% (13/125)Receiving objects:  11% (14/125)Receiving objects:  12% (15/125)Receiving objects:  13% (17/125)Receiving objects:  14% (18/125)Receiving objects:  15% (19/125)Receiving objects:  16% (20/125)Receiving objects:  17% (22/125)Receiving objects:  18% (23/125)Receiving objects:  19% (24/125)Receiving objects:  20% (25/125)Receiving objects:  21% (27/125)Receiving objects:  22% (28/125)Receiving objects:  23% (29/125)Receiving objects:  24% (30/125)Receiving objects:  25% (32/125)Receiving objects:  26% (33/125)Receiving objects:  27% (34/125)Receiving objects:  28% (35/125)Receiving objects:  29% (37/125)Receiving objects:  30% (38/125)Receiving objects:  31% (39/125)Receiving objects:  32% (40/125)Receiving objects:  33% (42/125)Receiving objects:  34% (43/125)Receiving objects:  35% (44/125)Receiving objects:  36% (45/125)Receiving objects:  37% (47/125)Receiving objects:  38% (48/125)Receiving objects:  39% (49/125)Receiving objects:  40% (50/125)Receiving objects:  41% (52/125)Receiving objects:  42% (53/125)Receiving objects:  43% (54/125)Receiving objects:  44% (55/125)Receiving objects:  45% (57/125)Receiving objects:  46% (58/125)Receiving objects:  47% (59/125)Receiving objects:  48% (60/125)Receiving objects:  49% (62/125)Receiving objects:  50% (63/125)Receiving objects:  51% (64/125)Receiving objects:  52% (65/125)Receiving objects:  53% (67/125)Receiving objects:  54% (68/125)Receiving objects:  55% (69/125)Receiving objects:  56% (70/125)Receiving objects:  57% (72/125)remote: Total 125 (delta 36), reused 0 (delta 0), pack-reused 0[K
+Receiving objects:  58% (73/125)Receiving objects:  59% (74/125)Receiving objects:  60% (75/125)Receiving objects:  61% (77/125)Receiving objects:  62% (78/125)Receiving objects:  63% (79/125)Receiving objects:  64% (80/125)Receiving objects:  65% (82/125)Receiving objects:  66% (83/125)Receiving objects:  67% (84/125)Receiving objects:  68% (85/125)Receiving objects:  69% (87/125)Receiving objects:  70% (88/125)Receiving objects:  71% (89/125)Receiving objects:  72% (90/125)Receiving objects:  73% (92/125)Receiving objects:  74% (93/125)Receiving objects:  75% (94/125)Receiving objects:  76% (95/125)Receiving objects:  77% (97/125)Receiving objects:  78% (98/125)Receiving objects:  79% (99/125)Receiving objects:  80% (100/125)Receiving objects:  81% (102/125)Receiving objects:  82% (103/125)Receiving objects:  83% (104/125)Receiving objects:  84% (105/125)Receiving objects:  85% (107/125)Receiving objects:  86% (108/125)Receiving objects:  87% (109/125)Receiving objects:  88% (110/125)Receiving objects:  89% (112/125)Receiving objects:  90% (113/125)Receiving objects:  91% (114/125)Receiving objects:  92% (115/125)Receiving objects:  93% (117/125)Receiving objects:  94% (118/125)Receiving objects:  95% (119/125)Receiving objects:  96% (120/125)Receiving objects:  97% (122/125)Receiving objects:  98% (123/125)Receiving objects:  99% (124/125)Receiving objects: 100% (125/125)Receiving objects: 100% (125/125), 376.58 KiB | 5.98 MiB/s, done.
+Resolving deltas:   0% (0/36)Resolving deltas:   5% (2/36)Resolving deltas:   8% (3/36)Resolving deltas:  11% (4/36)Resolving deltas:  13% (5/36)Resolving deltas:  16% (6/36)Resolving deltas:  22% (8/36)Resolving deltas:  25% (9/36)Resolving deltas:  27% (10/36)Resolving deltas:  30% (11/36)Resolving deltas:  33% (12/36)Resolving deltas:  36% (13/36)Resolving deltas:  38% (14/36)Resolving deltas:  41% (15/36)Resolving deltas:  44% (16/36)Resolving deltas:  47% (17/36)Resolving deltas:  50% (18/36)Resolving deltas:  52% (19/36)Resolving deltas:  55% (20/36)Resolving deltas:  58% (21/36)Resolving deltas:  61% (22/36)Resolving deltas:  63% (23/36)Resolving deltas:  66% (24/36)Resolving deltas:  69% (25/36)Resolving deltas:  72% (26/36)Resolving deltas:  75% (27/36)Resolving deltas:  77% (28/36)Resolving deltas:  80% (29/36)Resolving deltas:  83% (30/36)Resolving deltas:  86% (31/36)Resolving deltas:  88% (32/36)Resolving deltas:  91% (33/36)Resolving deltas:  94% (34/36)Resolving deltas:  97% (35/36)Resolving deltas: 100% (36/36)Resolving deltas: 100% (36/36), done.
+[?2004hakozina2@n01-31:~$ cd ~/4[Kcs471
+[?2004l[?2004hakozina2@n01-31:~/cs471$ ls
+[?2004lannounce.html  announce.umt  assets  bin  docs	hw  index.html	index.umt  labs  misc  projects  README.md  slides  umt.make
+[?2004hakozina2@n01-31:~/cs471$ git pull
+[?2004lAlready up to date.
+[?2004hakozina2@n01-31:~/cs471$ git log -5
+[?2004l[?1h=[33mcommit 85cb8441b4c9159f31591a4dfd926744f2747db2[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m[m
+Author: zerksis umrigar <umrigar@binghamton.edu>[m
+Date:   Wed Aug 23 20:23:46 2023 -0400[m
+[m
+    post-class updates; video links[m
+[m
+[33mcommit c65a6b5bbc7d198b73d1a3836b1b41033571d83e[m[m
+Author: zerksis umrigar <umrigar@binghamton.edu>[m
+Date:   Wed Aug 23 13:59:50 2023 -0400[m
+[m
+    pre-class updates[m
+[m
+[33mcommit 92d62260e21ad8882b5aaca7448242a8f0f4015e[m[m
+Author: zerksis umrigar <umrigar@binghamton.edu>[m
+Date:   Wed Aug 23 08:49:03 2023 -0400[m
+[m
+    updates[m
+[m
+[33mcommit 875f86fe389a83bd9f220a1b03f3a857cc3518b5[m[m
+Author: zerksis umrigar <umrigar@binghamton.edu>[m
+Date:   Tue Aug 22 20:09:59 2023 -0400[m
+[m
+    updates[m
+[m
+[33mcommit e305d56edf48d8cf717232ac59d54913914cc4d9[m[m
+Author: zerksis umrigar <umrigar@binghamton.edu>[m
+Date:   Tue Aug 22 18:58:25 2023 -0400[m
+[m
+    added initial material[m
+[K[?1l>[?2004hakozina2@n01-31:~/cs471$ git log -3 labs/lab0.umt
+[?2004lfatal: ambiguous argument 'labs/lab0.umt': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisioScript started on 2023-08-24 17:04:25-04:00 [TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="80" LINES="24"]
+[?2004hakozina2@n01-31:~/tmp/lab0$ 
+[?2004l[?2004hakozina2@n01-31:~/tmp/lab0$ 
+[?2004l[?2004hakozina2@n01-31:~/tmp/lab0$ 
+[?2004l[?2004hakozina2@n01-31:~/tmp/lab0$ 
+[?2004l[?2004hakozina2@n01-31:~/tmp/lab0$ 
+[?2004l[?2004hakozina2@n01-31:~/tmp/lab0$ 
+[?2004l[?2004hakozina2@n01-31:~/tmp/lab0$ 
+[?2004l[?2004hakozina2@n01-31:~/tmp/lab0$ 
+[?2004l[?2004hakozina2@n01-31:~/tmp/lab0$ 
+[?2004l[?2004hakozina2@n01-31:~/tmp/lab0$ 
+[?2004l[?2004hakozina2@n01-31:~/tmp/lab0$ 
+[?2004l[?2004hakozina2@n01-31:~/tmp/lab0$ 
+[?2004l[?2004hakozina2@n01-31:~/tmp/lab0$ 
+[?2004l[?2004hakozina2@n01-31:~/tmp/lab0$ ls
+[?2004llab0.LOG
+[?2004hakozina2@n01-31:~/tmp/lab0$ cd ..
+[?2004l[?2004hakozina2@n01-31:~/tmp$ cd ..
+[?2004l[?2004hakozina2@n01-31:~$ cd tmp
+[?2004l[?2004hakozina2@n01-31:~/tmp$ ls
+[?2004llab0  lab1  tmp.HE56wcwS3z  tmp.vSnUcP4MuZ
+[?2004hakozina2@n01-31:~/tmp$ cd ..
+[?2004l[?2004hakozina2@n01-31:~$ cd v[Kcds[K[Ks471
+[?2004l[?2004hakozina2@n01-31:~/cs471$ ls
+[?2004lannounce.html  assets  docs  index.html  labs  projects   slides
+announce.umt   bin     hw    index.umt	 misc  README.md  umt.make
+[?2004hakozina2@n01-31:~/cs471$ cd ..
+[?2004l[?2004hakozina2@n01-31:~$ cat ~/.sssh[K[Kh/id_rsa.pub
+[?2004lssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQC99PeDNtYnT/wU5/n13CtJD+DXMY4bt7yVb5R6uyeVFdIiFjp/efnPwHnIwHeSLYdPIJRy8DahZgfJvH3lA0QFKSMbgdnWwnJznnrurJOAoa/w0tMQRDLfVDUG9QIcj3zgZLBIBF6+Uy1b6xnBWynia1OT7NzAeWcQBQgVZAvtcyOrTjfSxN0SA/iw210sj6/Mn+lMhIpXSWAm+fZZD8ImPhPX9kiMLH1sSl52voFhOAAp80j5URpbHj10iDmTuOVooEVtURngeyhRziqsWaZlA/YpkgFKi2zDVdc3rQ7KqitLNfhbqcG//LWT1Xwo410b0TaFeJIZ+SR+NrWFcSRx/ZODF/NWbLELTld8O4xOcz4jCl7m+XltLeAYtzBLCbt7mrHniEI/PvYaechVMUzuZTrKnFp5DnYIFNq0r1PAwqApMVqItVYDBoFQKwcDkr+C1x7cp91LGeWCOJ8atvd3llrH++eFJ10NITY3cBzDR7dq3ZYFzcvjkVg4cbbtjKM= akozina2@remote01
+[?2004hakozina2@n01-31:~$ [Kakozina2@n01-31:~$ ^C[?2004l[?2004h[?2004l
+[?2004hakozina2@n01-31:~$ [Kakozina2@n01-31:~$ [Kakozina2@n01-31:~$ [Kakozina2@n01-31:~$ git clone[K[K[K[K[K[K[K[K[Kcd ~
+[?2004l[?2004hakozina2@n01-31:~$ git clone [7mhttps://github.com/annitusha/i471a.git[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Chttps://github.com/annitusha/i471a.git
+[?2004lCloning into 'i471a'...
+Username for 'https://github.com': annitusha
+Password for 'https://annitusha@github.com': 
+remote: Support for password authentication was removed on August 13, 2021.
+remote: Please see https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
+fatal: Authentication failed for 'https://github.com/annitusha/i471a.git/'
+[?2004hakozina2@n01-31:~$ git clone [7mgit@github.com:annitusha/i471a.git[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgit@github.com:annitusha/i471a.git
+[?2004lCloning into 'i471a'...
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!
+Someone could be eavesdropping on you right now (man-in-the-middle attack)!
+It is also possible that a host key has just been changed.
+The fingerprint for the RSA key sent by the remote host is
+SHA256:uNiVztksCsDhcc0u9e8BujQXVUpKZIDTMczCvj3tD2s.
+Please contact your system administrator.
+Add correct host key in /home/akozina2/.ssh/known_hosts to get rid of this message.
+Offending RSA key in /home/akozina2/.ssh/known_hosts:5
+  remove with:
+  ssh-keygen -f "/home/akozina2/.ssh/known_hosts" -R "github.com"
+Host key for github.com has changed and you have requested strict checking.
+Host key verification failed.
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+[?2004hakozina2@n01-31:~$ [Kakozina2@n01-31:~$ [7mssh-keygen -f "/home/akozina2/.ssh/known_hosts" -R "github.com"[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cssh-keygen -f "/home/akozina2/.ssh/known_hosts" -R "github.com"
+[?2004l# Host github.com found: line 5
+/home/akozina2/.ssh/known_hosts updated.
+Original contents retained as /home/akozina2/.ssh/known_hosts.old
+[?2004hakozina2@n01-31:~$ ssh-keygen -f "/home/akozina2/.ssh/known_hosts" -R "github.com"[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[19Pgit clone git@github.com:annitusha/i471a.git
+[?2004lCloning into 'i471a'...
+The authenticity of host 'github.com (140.82.113.3)' can't be established.
+ED25519 key fingerprint is SHA256:+DiY3wvvV6TuJJhbpZisF/zLDA0zPMSvHdkr4UvCOqU.
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'github.com' (ED25519) to the list of known hosts.
+remote: Enumerating objects: 4, done.[K
+remote: Counting objects:  25% (1/4)[Kremote: Counting objects:  50% (2/4)[Kremote: Counting objects:  75% (3/4)[Kremote: Counting objects: 100% (4/4)[Kremote: Counting objects: 100% (4/4), done.[K
+remote: Compressing objects:  33% (1/3)[Kremote: Compressing objects:  66% (2/3)[Kremote: Compressing objects: 100% (3/3)[Kremote: Compressing objects: 100% (3/3), done.[K
+remote: Total 4 (delta 0), reused 0 (delta 0), pack-reused 0[K
+Receiving objects:  25% (1/4)Receiving objects:  50% (2/4)Receiving objects:  75% (3/4)Receiving objects: 100% (4/4)Receiving objects: 100% (4/4), done.
+[?2004hakozina2@n01-31:~$ cd ~/i471a
+[?2004l[?2004hakozina2@n01-31:~/i471a$ git status -s
+[?2004l[?2004hakozina2@n01-31:~/i471a$ git commit -a -m 'S[KFinishing up lab0'
+[?2004lOn branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+[?2004hakozina2@n01-31:~/i471a$ git push
+[?2004lEverything up-to-date
+[?2004hakozina2@n01-31:~/i471a$ ls
+[?2004lREADME.md
+[?2004hakozina2@n01-31:~/i471a$ cdls[K[K[K[Kls -dl ~/cs471 ~/i471a
+[?2004ldrwxr-x--- 11 akozina2 akozina2 4096 Aug 24 16:42 /home/akozina2/cs471
+drwxr-x---  3 akozina2 akozina2   66 Aug 24 17:25 /home/akozina2/i471a
+[?2004hakozina2@n01-31:~/i471a$ ls -l ~/.ssh ~/cs471 ~/i471a
+[?2004l/home/akozina2/cs471:
+total 32
+-rw-r----- 1 akozina2 akozina2 1236 Aug 24 16:42 announce.html
+-rw-r----- 1 akozina2 akozina2   55 Aug 24 16:42 announce.umt
+drwxr-x--- 5 akozina2 akozina2   59 Aug 24 16:42 assets
+drwxr-x--- 2 akozina2 akozina2 4096 Aug 24 16:42 bin
+drwxr-x--- 2 akozina2 akozina2   51 Aug 24 16:42 docs
+drwxr-x--- 2 akozina2 akozina2   51 Aug 24 16:42 hw
+-rw-r----- 1 akozina2 akozina2 1952 Aug 24 16:42 index.html
+-rw-r----- 1 akozina2 akozina2  603 Aug 24 16:42 index.umt
+drwxr-x--- 3 akozina2 akozina2   73 Aug 24 16:42 labs
+drwxr-x--- 7 akozina2 akozina2 4096 Aug 24 16:42 misc
+drwxr-x--- 2 akozina2 akozina2   51 Aug 24 16:42 projects
+-rw-r----- 1 akozina2 akozina2   40 Aug 24 16:42 README.md
+drwxr-x--- 4 akozina2 akozina2  112 Aug 24 16:42 slides
+-rw-r----- 1 akozina2 akozina2  723 Aug 24 16:42 umt.make
+
+/home/akozina2/i471a:
+total 4
+-rw-r----- 1 akozina2 akozina2 29 Aug 24 17:25 README.md
+
+/home/akozina2/.ssh:
+total 28
+-rw------- 1 akozina2 akozina2  571 Aug 25  2021 authorized_keys
+-rw------- 1 akozina2 akozina2 2602 Aug 25  2021 id_rsa
+-rw-r----- 1 akozina2 akozina2  571 Aug 25  2021 id_rsa.pub
+-rw------- 1 akozina2 akozina2 5628 Aug 24 17:25 known_hosts
+-rw-r--r-- 1 akozina2 akozina2 4792 Aug 24 17:25 known_hosts.old
+[?2004hakozina2@n01-31:~/i471a$ cd [K[K[Kgit checkout -b lab0
+[?2004l\Switched to a new branch 'lab0'
+[?2004hakozina2@n01-31:~/i471a$ \[Kmkdir -p sugb[K[Kbmit
+[?2004l[?2004hakozina2@n01-31:~/i471a$ contro[K[K[K[K[K[Kcontrol-[K[K[K[K[K[K[K[K[?2004l
+exit
+
+Script done on 2023-08-24 17:32:31-04:00 [COMMAND_EXIT_CODE="0"]
