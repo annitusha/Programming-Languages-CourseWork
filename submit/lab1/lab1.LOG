@@ -246,3 +246,130 @@ Token(kind='ID', lexeme='ID_44')
 exit
 
 Script done on 2023-08-31 17:42:50-04:00 [COMMAND_EXIT_CODE="0"]
+ls[K./lexer.py data.txt
+[?2004lToken(kind='ID', lexeme='   ')
+Token(kind='INT', lexeme='21')
+Token(kind='ID', lexeme='  ')
+Token(kind='INT', lexeme='23')
+Token(kind='ID', lexeme='\n   ')
+Token(kind='ID', lexeme='A34')
+Token(kind='ID', lexeme='  ')
+Token(kind='ID', lexeme='_22')
+Token(kind='ID', lexeme='  ')
+Token(kind='ID', lexeme='ID_44')
+Token(kind='ID', lexeme='\n   ')
+Token(kind='ID', lexeme='// asd sdfs')
+Token(kind='ID', lexeme='\n   \n')
+[?2004hakozina2@n01-20:~/i471a/submit/lab1/exercises/lexer$ ./lexer.py data.txt[Kemacs lexer.py
+[?2004l^Z
+[20]+  Stopped                 emacs lexer.py
+[?2004hakozina2@n01-20:~/i471a/submit/lab1/exercises/lexer$ emacs lexer.py./lexer.py data.txt
+[?2004lToken(kind='INT', lexeme='21')
+Token(kind='INT', lexeme='23')
+Token(kind='ID', lexeme='A34')
+Token(kind='ID', lexeme='_22')
+Token(kind='ID', lexeme='ID_44')
+[?2004hakozina2@n01-20:~/i471a/submit/lab1/exercises/lexer$ [?2004l
+exit
+There are stopped jobs.
+[?2004hakozina2@n01-20:~/i471a/submit/lab1/exercises/lexer$ control-D
+[?2004lbash: control-D: command not found
+[?2004hakozina2@n01-20:~/i471a/submit/lab1/exercises/lexer$ cd ..
+[?2004l[?2004hakozina2@n01-20:~/i471a/submit/lab1/exercises$ cd ..
+[?2004l[?2004hakozina2@n01-20:~/i471a/submit/lab1$ ls
+[?2004lexercises  lab1.LOG
+[?2004hakozina2@n01-20:~/i471a/submit/lab1$ emacs lab1.LOG 
+[?2004l^Z
+[21]+  Stopped                 emacs lab1.LOG
+[?2004hakozina2@n01-20:~/i471a/submit/lab1$ script -a lab1.LOG
+[?2004lScript started, output log file is 'lab1.LOG'.
+[?2004hakozina2@n01-20:~/i471a/submit/lab1$ git pushmerge lab0 -m 'merged lab0'[14Pcheckout mainpush -u origin lab0commit -a -m 'completing lab0'[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kls
+[?2004lexercises  lab1.LOG
+[?2004hakozina2@n01-20:~/i471a/submit/lab1$ cd exercises/
+[?2004l[?2004hakozina2@n01-20:~/i471a/submit/lab1/exercises$ ls
+[?2004l01  02	exercises  lexer  regex
+[?2004hakozina2@n01-20:~/i471a/submit/lab1/exercises$ cd lexert[K
+[?2004l[?2004hakozina2@n01-20:~/i471a/submit/lab1/exercises/lexer$ cd lexerls[Kcd exercises/ls[Kgit pushmerge lab0 -m 'merged lab0'[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[10Pcheckout main
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cpush -u origin lab0commit -a -m 'completing lab0'[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[14Pstatus -s
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cadd submit/lab0merge -m 'merged main' main[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[14Pbranch -l
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmv ~/tmp/lab0 submit[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kls
+[?2004ldata.txt  Lexer.java  lexer.mjs  lexer.py
+[?2004hakozina2@n01-20:~/i471a/submit/lab1/exercises/lexer$ cd ..
+[?2004l[?2004hakozina2@n01-20:~/i471a/submit/lab1/exercises$ cd regex/
+[?2004l[?2004hakozina2@n01-20:~/i471a/submit/lab1/exercises/regex$ ls
+[?2004ldata.txt  lex2.mjs   lex3.mjs	lexer.mjs
+lex1.mjs  lex2.mjs~  lex3.mjs~	table-lexer.mjs
+[?2004hakozina2@n01-20:~/i471a/submit/lab1/exercises/regex$ cd[K[K./lexer.py
+[?2004lbash: ./lexer.py: No such file or directory
+[?2004hakozina2@n01-20:~/i471a/submit/lab1/exercises/regex$ ./lexer.py data.txt
+[?2004lbash: ./lexer.py: No such file or directory
+[?2004hakozina2@n01-20:~/i471a/submit/lab1/exercises/regex$ cd ..
+[?2004l[?2004hakozina2@n01-20:~/i471a/submit/lab1/exercises$ cd [K[K[Kls
+[?2004l01  02	exercises  lexer  regex
+[?2004hakozina2@n01-20:~/i471a/submit/lab1/exercises$ cd lexer/
+[?2004l[?2004hakozina2@n01-20:~/i471a/submit/lab1/exercises/lexer$ cd lexer/ls[Kcd .../lexer.py data.txt
+[?2004lToken(kind='INT', lexeme='21')
+Token(kind='INT', lexeme='23')
+Token(kind='ID', lexeme='A34')
+Token(kind='ID', lexeme='_22')
+Token(kind='ID', lexeme='ID_44')
+[?2004hakozina2@n01-20:~/i471a/submit/lab1/exercises/lexer$ [?2004l
+exit
+Script done.
+[?2004hakozina2@n01-20:~/i471a/submit/lab1$ cd ~/i471a
+[?2004l[?2004hakozina2@n01-20:~/i471a$ git branch -l
+[?2004l[?1h=  lab0[m[m
+* [32mlab1[m[m
+  main[m[m
+[K[?1l>[?2004hakozina2@n01-20:~/i471a$ git checkout main
+[?2004lerror: Your local changes to the following files would be overwritten by checkout:
+	submit/lab1/exercises/lexer/lexer.py
+Please commit your changes or stash them before you switch branches.
+Aborting
+[?2004hakozina2@n01-20:~/i471a$ i[Kgit pull
+[?2004lAlready up to date.
+[?2004hakozina2@n01-20:~/i471a$ git checkout lab1
+[?2004lM	submit/lab1/exercises/lexer/lexer.py
+Already on 'lab1'
+Your branch is up to date with 'origin/lab1'.
+[?2004hakozina2@n01-20:~/i471a$ git merge -m 'merged main' main
+[?2004lAlready up to date.
+[?2004hakozina2@n01-20:~/i471a$ git status -s
+[?2004l [31mM[m submit/lab1/exercises/lexer/lexer.py
+[31m??[m submit/lab1/exercises/regex/lex2.mjs
+[31m??[m submit/lab1/exercises/regex/lex2.mjs~
+[31m??[m submit/lab1/exercises/regex/lex3.mjs
+[31m??[m submit/lab1/exercises/regex/lex3.mjs~
+[31m??[m submit/lab1/lab1.LOG
+[?2004hakozina2@n01-20:~/i471a$ git [K[K[K[Kgit add .
+[?2004l[?2004hakozina2@n01-20:~/i471a$ git status -s
+[?2004l[32mM[m  submit/lab1/exercises/lexer/lexer.py
+[32mA[m  submit/lab1/exercises/regex/lex2.mjs
+[32mA[m  submit/lab1/exercises/regex/lex2.mjs~
+[32mA[m  submit/lab1/exercises/regex/lex3.mjs
+[32mA[m  submit/lab1/exercises/regex/lex3.mjs~
+[32mA[m  submit/lab1/lab1.LOG
+[?2004hakozina2@n01-20:~/i471a$ git commit -a -m 'completing lab1'
+[?2004l[lab1 c6092ba] completing lab1
+ Committer: Anna Kozina <akozina2@cs.binghamton.edu>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 6 files changed, 277 insertions(+), 1 deletion(-)
+ create mode 100644 submit/lab1/exercises/regex/lex2.mjs
+ create mode 100644 submit/lab1/exercises/regex/lex2.mjs~
+ create mode 100644 submit/lab1/exercises/regex/lex3.mjs
+ create mode 100644 submit/lab1/exercises/regex/lex3.mjs~
+ create mode 100644 submit/lab1/lab1.LOG
+[?2004hakozina2@n01-20:~/i471a$ git push
+[?2004lEnumerating objects: 20, done.
+Counting objects:   5% (1/20)Counting objects:  10% (2/20)Counting objects:  15% (3/20)Counting objects:  20% (4/20)Counting objects:  25% (5/20)Counting objects:  30% (6/20)Counting objects:  35% (7/20)Counting objects:  40% (8/20)Counting objects:  45% (9/20)Counting objects:  50% (10/20)Counting objects:  55% (11/20)Counting objects:  60% (12/20)Counting objects:  65% (13/20)Counting objects:  70% (14/20)Counting objects:  75% (15/20)Counting objects:  80% (16/20)
