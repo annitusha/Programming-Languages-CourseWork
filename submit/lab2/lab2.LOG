@@ -1,0 +1,141 @@
+Script started on 2023-09-07 16:35:32-04:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="80" LINES="24"]
+[?2004hakozina2@n01-16:~/i471a/submit/lab2$ cd exercises
+[?2004l[?2004hakozina2@n01-16:~/i471a/submit/lab2/exercises$ ls
+[?2004last  calc
+[?2004hakozina2@n01-16:~/i471a/submit/lab2/exercises$ cd calc
+[?2004l[?2004hakozina2@n01-16:~/i471a/submit/lab2/exercises/calc$ ls
+[?2004lcalc.mjs  calc.py  data.txt  expn-data.txt
+[?2004hakozina2@n01-16:~/i471a/submit/lab2/exercises/calc$ cat data.txt
+[?2004l1 + 2 - 3;
+
+--2 - (3 - 4);
+[?2004hakozina2@n01-16:~/i471a/submit/lab2/exercises/calc$ ./calc.mjs
+[?2004lusage: calc.mjs INPUT_FILE
+[?2004hakozina2@n01-16:~/i471a/submit/lab2/exercises/calc$ ./calc.mjs data.txt
+[?2004l[ [33m0[39m, [33m3[39m ]
+[?2004hakozina2@n01-16:~/i471a/submit/lab2/exercises/calc$ cat expn-data.txt
+[?2004l-2 ** 2 ** 3 ;
+1 + 2**(1 + 5) ;
+1 + -2**(1 + 5) ;
+[?2004hakozina2@n01-16:~/i471a/submit/lab2/exercises/calc$ ./calc.py expn-data.txt
+[?2004lexpecting ; at *
+[?2004hakozina2@n01-16:~/i471a/submit/lab2/exercises/calc$ ls
+[?2004lcalc.mjs  calc.py  data.txt  expn-data.txt
+[?2004hakozina2@n01-16:~/i471a/submit/lab2/exercises/calc$ emacs calc.py
+[?2004l^Z
+[1]+  Stopped                 emacs calc.py
+[?2004hakozina2@n01-16:~/i471a/submit/lab2/exercises/calc$ emacs calc.pyls[K./calc.py expn-data.txt
+[?2004l  File "/home/akozina2/i471a/submit/lab2/exercises/calc/./calc.py", line 69
+    int f = factor()
+        ^
+SyntaxError: invalid syntax
+[?2004hakozina2@n01-16:~/i471a/submit/lab2/exercises/calc$ ./calc.py expn-data.txt[10Pemacs calc.py
+[?2004l^Z
+[2]+  Stopped                 emacs calc.py
+[?2004hakozina2@n01-16:~/i471a/submit/lab2/exercises/calc$ emacs calc.py./calc.py expn-data.txt
+[?2004l  File "/home/akozina2/i471a/submit/lab2/exercises/calc/./calc.py", line 71
+    const Token tok0 = tok
+          ^^^^^
+SyntaxError: invalid syntax
+[?2004hakozina2@n01-16:~/i471a/submit/lab2/exercises/calc$ ./calc.py expn-data.txt[10Pemacs calc.py
+[?2004l^Z
+[3]+  Stopped                 emacs calc.py
+[?2004hakozina2@n01-16:~/i471a/submit/lab2/exercises/calc$ emacs calc.py./calc.py expn-data.txt
+[?2004l  File "/home/akozina2/i471a/submit/lab2/exercises/calc/./calc.py", line 79
+    consume(-)
+             ^
+SyntaxError: invalid syntax
+[?2004hakozina2@n01-16:~/i471a/submit/lab2/exercises/calc$ ./calc.py expn-data.txt[10Pemacs calc.py
+[?2004l^Z
+[4]+  Stopped                 emacs calc.py
+[?2004hakozina2@n01-16:~/i471a/submit/lab2/exercises/calc$ emacs calc.py./calc.py expn-data.txt
+[?2004l  File "/home/akozina2/i471a/submit/lab2/exercises/calc/./calc.py", line 81
+    else if (peek('INT')):
+                          ^
+IndentationError: unindent does not match any outer indentation level
+[?2004hakozina2@n01-16:~/i471a/submit/lab2/exercises/calc$ ./calc.py expn-data.txt[10Pemacs calc.py
+[?2004l^Z
+[5]+  Stopped                 emacs calc.py
+[?2004hakozina2@n01-16:~/i471a/submit/lab2/exercises/calc$ emacs calc.py./calc.py expn-data.txt
+[?2004l  File "/home/akozina2/i471a/submit/lab2/exercises/calc/./calc.py", line 81
+    else if (peek('INT')):
+         ^^
+SyntaxError: expected ':'
+[?2004hakozina2@n01-16:~/i471a/submit/lab2/exercises/calc$ ./calc.py expn-data.txt[10Pemacs calc.py
+[?2004l^Z
+[6]+  Stopped                 emacs calc.py
+[?2004hakozina2@n01-16:~/i471a/submit/lab2/exercises/calc$ emacs calc.py./calc.py expn-data.txt
+[?2004lexpecting ; at *
+[?2004hakozina2@n01-16:~/i471a/submit/lab2/exercises/calc$ ./calc.py expn-data.txt[10Pemacs calc.py
+[?2004l^Z
+[7]+  Stopped                 emacs calc.py
+[?2004hakozina2@n01-16:~/i471a/submit/lab2/exercises/calc$ emacs calc.py./calc.py expn-data.txt
+[?2004lexpecting ; at *
+[?2004hakozina2@n01-16:~/i471a/submit/lab2/exercises/calc$ ./calc.py expn-data.txt[10Pemacs calc.py
+[?2004l^Z
+[8]+  Stopped                 emacs calc.py
+[?2004hakozina2@n01-16:~/i471a/submit/lab2/exercises/calc$ emacs calc.py./calc.py expn-data.txt
+[?2004lexpecting ; at *
+[?2004hakozina2@n01-16:~/i471a/submit/lab2/exercises/calc$ cd ..
+[?2004l[?2004hakozina2@n01-16:~/i471a/submit/lab2/exercises$ cd ast
+[?2004l[?2004hakozina2@n01-16:~/i471a/submit/lab2/exercises/ast$ ls
+[?2004last.mjs  ast.py  data.json  data.txt  expn-data.json  expn-data.txt
+[?2004hakozina2@n01-16:~/i471a/submit/lab2/exercises/ast$ emacs ast.mjs
+[?2004l^Z
+[9]+  Stopped                 emacs ast.mjs
+[?2004hakozina2@n01-16:~/i471a/submit/lab2/exercises/ast$ emacs ast.mjsls[K[K[Kcd ..
+[?2004l[?2004hakozina2@n01-16:~/i471a/submit/lab2/exercises$ cd calc
+[?2004l[?2004hakozina2@n01-16:~/i471a/submit/lab2/exercises/calc$ cd calc[2P..emacs ast.mjsls[Kcd ast[1P.../calc.py expn-data.txt[10Pemacs calc.py./calc.py expn-data.txt
+[?2004lexpecting ; at *
+[?2004hakozina2@n01-16:~/i471a/submit/lab2/exercises/calc$ emacs calc.py
+[?2004l^Z
+[10]+  Stopped                 emacs calc.py
+[?2004hakozina2@n01-16:~/i471a/submit/lab2/exercises/calc$ emacs calc.py./calc.py expn-data.txt
+[?2004lexpecting ; at *
+[?2004hakozina2@n01-16:~/i471a/submit/lab2/exercises/calc$ ./calc.py expn-data.txt[10Pemacs calc.py
+[?2004l^Z
+[11]+  Stopped                 emacs calc.py
+[?2004hakozina2@n01-16:~/i471a/submit/lab2/exercises/calc$ emacs calc.py./calc.py expn-data.txt[10Pemacs calc.py
+[?2004l^Z
+[12]+  Stopped                 emacs calc.py
+[?2004hakozina2@n01-16:~/i471a/submit/lab2/exercises/calc$ emacs calc.py./calc.py expn-data.txt
+[?2004l[-256, 65, -63]
+[?2004hakozina2@n01-16:~/i471a/submit/lab2/exercises/calc$ cd ..
+[?2004l[?2004hakozina2@n01-16:~/i471a/submit/lab2/exercises$ ls
+[?2004last  calc
+[?2004hakozina2@n01-16:~/i471a/submit/lab2/exercises$ cd ast
+[?2004l[?2004hakozina2@n01-16:~/i471a/submit/lab2/exercises/ast$ ls
+[?2004last.mjs  ast.py  data.json  data.txt  expn-data.json  expn-data.txt
+[?2004hakozina2@n01-16:~/i471a/submit/lab2/exercises/ast$ emacs ast.mjs
+[?2004l^Z
+[13]+  Stopped                 emacs ast.mjs
+[?2004hakozina2@n01-16:~/i471a/submit/lab2/exercises/ast$ ols[K[K[Kls
+[?2004last.mjs  ast.py  data.json  data.txt  expn-data.json  expn-data.txt
+[?2004hakozina2@n01-16:~/i471a/submit/lab2/exercises/ast$ emacs ast.py
+[?2004l^Z
+[14]+  Stopped                 emacs ast.py
+[?2004hakozina2@n01-16:~/i471a/submit/lab2/exercises/ast$ cd ..
+[?2004l[?2004hakozina2@n01-16:~/i471a/submit/lab2/exercises$ ls
+[?2004last  calc
+[?2004hakozina2@n01-16:~/i471a/submit/lab2/exercises$ cd calc
+[?2004l[?2004hakozina2@n01-16:~/i471a/submit/lab2/exercises/calc$ ls
+[?2004lcalc.mjs  calc.py  data.txt  expn-data.txt
+[?2004hakozina2@n01-16:~/i471a/submit/lab2/exercises/calc$ emacs calc.py
+[?2004l^Z
+[15]+  Stopped                 emacs calc.py
+[?2004hakozina2@n01-16:~/i471a/submit/lab2/exercises/calc$ cd ..
+[?2004l[?2004hakozina2@n01-16:~/i471a/submit/lab2/exercises$ cd ast
+[?2004l[?2004hakozina2@n01-16:~/i471a/submit/lab2/exercises/ast$ ls
+[?2004last.mjs  ast.py  data.json  data.txt  expn-data.json  expn-data.txt
+[?2004hakozina2@n01-16:~/i471a/submit/lab2/exercises/ast$ emacs ast.py
+[?2004l^Z
+[16]+  Stopped                 emacs ast.py
+[?2004hakozina2@n01-16:~/i471a/submit/lab2/exercises/ast$ emacs ast.py
+[?2004l^Z
+[17]+  Stopped                 emacs ast.py
+[?2004hakozina2@n01-16:~/i471a/submit/lab2/exercises/ast$ jq -S ..[K
+[?2004l^Z
+[18]+  Stopped                 jq -S .
+[?2004hakozina2@n01-16:~/i471a/submit/lab2/exercises/ast$ ls
+[?2004last.mjs  ast.py  data.json  data.txt  expn-data.json  expn-data.txt
+[?2004hakozina2@n01-16:~/i471a/submit/lab2/exerci
