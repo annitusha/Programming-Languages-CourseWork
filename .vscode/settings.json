@@ -1,0 +1,9 @@
+{
+  "java.project.referencedLibraries": [
+    "lib/**/*.jar",
+    "submit/prj1-sol/json-simple-1.1.1.jar"
+  ],
+  "C_Cpp.intelliSenseCacheSize": 0,
+  "C_Cpp.intelliSenseMemoryLimit": 256,
+  "terminal.integrated.enablePersistentSessions": false
+}

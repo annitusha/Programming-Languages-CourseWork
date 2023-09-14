@@ -1,0 +1,207 @@
+Script started on 2023-09-14 16:38:20-04:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="80" LINES="24"]
+[?2004hakozina2@n01-36:~/i471a/submit/lab3$ racket
+[?2004lWelcome to Racket v8.7 [cs].
+> (+ 1 (/ 1 2) (/ 1 3) (/1 4[26G 1 41 4) (/ 1 5)
+    (+ 1 (/ 1 2) (/ 1 3) (/ 1 4) (/ 1 5))
+  ; user break [,bt for context]
+;
+;
+> > (+ 1 (/ 1 2) (/ 1 3) (/ 1 4) (/ 1 5)
+  (+ 1 (/ 1 2) (/ 1 3) (/ 1 4) (/ 1 5))
+  ;  ;[2A> [K
+[K
+[K[2A> > (+ 1 (/ 1 2) (/ 1 3) (/ 1 4) (/ 1 5)
+  (+ 1 (/ 1 2) (/ 1 3) (/ 1 4) (/ 1 5))
+  ;[2A> [K
+[K
+[K[2A> > (+ 1 (/ 1 2) (/ 1 3) (/ 1 4) (/ 1 5)
+  (+ 1 (/ 1 2) (/ 1 3) (/ 1 4) (/ 1 5))
+  ;[2A> [K
+[K
+[K[2A> (+ 1 (/1 2[12G[K[11G[10G[K 1 2) (/ 1 3) (/ 1 4) (/ 1 5))
+137/60
+> )_> )[K> [K(> [K> (+ 1 (/ 1 2) (/ 1 3) (/ 1 4) (/ 1 5))[39G[K[38G )[38G)[K) (/ 1 6))
+49/20
+> (+ 1.0 (/ 1 2) (/1 3[22G[K[21G[20G[K 1 3) (/ 1 4) (/1[36G[K 1 5))
+2.283333333333333
+> > (+ 1.0 (/ 1 2) (/ 1 3) (/ 1 4) (/ 1 5))[41G[K (/1 [45G[44G[K 1 6))
+2.4499999999999997
+> (3 * (expt 4 3)) -3)) -[6G[P [6G[P(> ([P > ([1@* [6G[1@ ([6G[1@3  (expt 4 3)) -[20G[K(-2*[23G[K[22G[K[21G[K[20G[K(*(-2) ([27G[Kexpt 4 2) (+4[39G[K 4[40G[K[39G[38G[K=[38G[K+ 4)[41G[K[40G[K[39G[38G[K[37G[K(*([39G[K (+4[42G[K 4) 4) ( - 1)
+192
+; application: not a procedure;
+;  expected a procedure that can be applied to arguments
+;   given: -2
+; [,bt for context]
+16
+-1
+> (- 1 ( + 4[12G[K(* 4 4))[19G[K[18G[K([18G[K ([11G[P([10G[P(([10G[P*[9G[P** 4 4 ( [16G+ (2) * expt 4 2 ( - (3) * expt 4 3)[20G[P  * expt 4 2 ( - (3) * expt 4 3)))))
+; application: not a procedure;
+;  expected a procedure that can be applied to arguments
+;   given: 3
+; [,bt for context]
+> ~~.> ~[K> [K(* 3 (expt 4 3)) ( -[22G[K[21G- (* 2 (expt 4 2)) (+ (*4[45G[K 4 4)) (- 1)
+192
+> > (* 3 (expt 4 3)) (- (* 2 (expt 4 2)) (+ (* 4 4)) (- 1)[39G[1@) 
+  
+  ; user break [,bt for context]
+^C; user break [,bt for context]
+
+[?2004hakozina2@n01-36:~/i471a/submit/lab3$ racket
+[?2004lWelcome to Racket v8.7 [cs].
+> > (* 3 (expt 4 3)) (- (* 2 (expt 4 2))) (+ (* 4 4)) (- 1))[39G[P 
+192
+> > (* 3 (expt 4 3)) (- (* 2 (expt 4 2)) (+ (* 4 4)) (- 1)- (* 2 (expt 4 2)) (+ [21G[P [20G[P  (* 2 (expt 4 2)) (+ (* 4 4))[48G[P > ([1@(*> ([1@-(> (-[1@ ( (* 3 (expt 4 3))  (* 2 (expt 4 2)[39G[1@ )[41G[1@)  4 2) )) (++[44G[P [43G[P  > ([1@(-> ([1@ (> ( [1@+(> ( [P(> ([P(> ([1@+(> (+[1@ ((- (* 3 (expt 4 3))  (* 2 (expt 4 2) ))  (* 4 4[54G[1@) > ([1@(+> ([1@+(> (+[1@ ((+ (- (* 3 (expt 4 3))  (* 2 (expt 4 2) ))  (* 4 4)) (- 1))
+  ; user break [,bt for context]
+\
+\
+> ; user break [,bt for context]
+^[[A
+> (+ (+ (- (* 3 (expt 4 3))  (* 2 (expt 4 2) ))  (* 4 4)) (- 1))
+  \
+175
+> > (+ (+ (- (* 3 (expt 4 3))  (* 2 (expt 4 2) ))  (* 4 4)) (- 1))
+  \[A> ([9P[20G(- (* 2 (expt 4 2)) (+ (* 4 4)) (- 1)
+[K[A[57G> ([9@+ (+ (- ([29G (* 2 (expt 4 2) ))  (* 4 4)) (- 1))[K
+  \  [K [K[A[65G
+; : undefined;
+;  cannot reference an identifier before its definition
+;   in module: top-level
+; [,bt for context]
+175
+> (* 1000 [10G[9G[K[8G[K[7G[K[6G[K> (*> ([K+ 1 (/ 0.05 1))> ([1@(+> ([1@e(> (e[1@x([6G[1@p([7G[1@t([8G[1@ ((+ 1 (/ 0.05 1[23G ))[23G))[K)[24G )[25G5)> ([1@(e> ([1@*(> (*[1@ ([6G[1@1([7G[1@0([8G[1@0([9G[1@0([10G[1@ ((expt (+ 1 (/ 0.05 1) 5))[32G) 5))
+1276.2815625000003
+> (define lis1 '(1 2 3 4 5))
+> > (define lis1 '(1 2 3 4 5))[14G[P [14G[1@2  '([18G[1@a11[19G[P  2[20G[P [20G[1@b > [K> > (define lis1 '(1 2 3 4 5))[14G[P [14G[1@2  '(1[18G[P [18G[1@a  2[20G[P [20G[1@b  3[22G[P [22G[1@c  4[24G 5))[K[24Gd 5)) 5[26G))[K[26Ge))
+> (car list1)
+; list1: undefined;
+;  cannot reference an identifier before its definition
+;   in module: top-level
+; [,bt for context]
+> > (car list1)> (define lis2 '(a b c d e))[14G1 '(1 2 3 4 5))[14G[1@t1[16G[1@1 1[16G[P 
+> > (define list1 '(1 2 3 4 5))> (car list1)[K> (define lis2 '(a b c d e))[14G[P [14G[1@t [15G[1@2 
+> (car list1)
+1
+> (cdr list1)
+'(2 3 4 5)
+> (car list2)
+'a
+> (cdr list2)
+'(b c d e)
+> (car (cdr (cdr list1)))
+3
+> (append list1 list2)
+'(1 2 3 4 5 a b c d e)
+> (cdr list2)99[15G[K[14G[K> ([1@(c> ([1@c(> (c[1@a([6G[1@r([7G[1@ ((cdr list2)0[19G[K)
+'b
+> (cdr list2)> ([1@(c> ([1@c(> (c[1@d([6G[1@r([7G[1@ ((cdr list2))> ([1@(c> ([1@c(> (c[1@d([6G[1@r([7G[1@ ((cdr (cdr list2)))
+'(d e)
+> app> ap[K> a[K> [K(append (cdr (cdr (cdr list2[30G[K 2)[32G[K[31G[K[30G2))) (cdr (cdr list1)))
+'(d e 3 4 5)
+> (define (rect-area width height) (* width height))
+> (define[9G[K[8G[K[7G[K[6G[K> (d[K> ([K> [Krect-area 4 5
+#<procedure:rect-area>
+4
+5
+> > rect-area 4 5> [1@(rrect-area 4 5)
+20
+> (defiu[8G[Kne (perimeter width height) (* 2 (+ width height)))
+> perimeter 4 [14G[13G[K[12G[11G[K[10G[K[9G[K[8G[K[7G[K[6G[K> pe[K> p[K> [K(perimeter 4 5)
+18
+> (define (line-length x1 y1 x2 y2) (([38G[K- x1 x2)[38G[1@(-[38G[1@e([39G[1@x([40G[1@p([41G[1@t([42G[1@ ((- x1 x2) 2)[38G[1@(e[38G[1@+([39G[1@ ((expt (- x1 x2) 2> [K> (perimeter 4 5)> ([8@define ([22Gwidth height) (* 2 (+ width height)))> (rect-area 4 5)[K> (define (perimeter width height) (* 2 (+ width height)))[58G[K[57G[K[56G[K[55G[K[54G[K[53G[K[52G[K[51G[K[50G[K[49G[48G[K[47G[K[46G[K[45G[K[44G[K[43G[42G[K[41G[K[40G[39G[K[38G[37G[K[36G[K[35G[34G[K[33G[K[32G[K[31G[K[30G[K[29G[K[28G[K[27G[26G[K[25G[K[24G[K[23G[K[22G[K[21G[20G[K[19G[K[18G[K[17G[K[16G[K[15G[K[14G[K[13G[K[12G[Kline-length x1 y1 x2 y2) (- x1 x2)[38G[1@(-[38G[1@e([39G[1@x([40G[1@p([41G[1@t([42G[1@ ((- x1 x2) 2)[38G[1@(e[38G[1@+([39G[1@ ((expt (- x1 x2) 2) (expt (- y1 y2))[74G[K 2))[38G[1@(+[38G[1@s([39G[1@q([40G[1@r[80G) [K)[A[41G[41G[1@t
+))[A[42G[42G[1@ [80G[K
+2))[A[43G(+ (expt (- x1 x2) 2) (expt (- y1 y2)
+2)2) )2) ))
+  )
+> (line-length 7 4 10 8)
+5
+> > (line-length 7 4 10 8)> ([8@define ([24Gx1 y1 x2 y2) (sqrt (+ (expt (- x1 x2) 2) (expt (- y1 y2)
+2) ))
+  )[A[6G[A[80G2[34G[P[79G 22) ))[K[A[34G[33G[P[80G)) ))[K[A[33G[32G[P)
+))[K[A[32G[31G[P[78G) ))[K[A[31G[30G[P[79G)))[K[A[30G[29G[P)
+  )
+[K[2A[29G[28G[P)[27G[P)[26G[P)[25G[P)[24G[P)[24G[1@l)[25G[1@i)[26G[1@s)[27G[1@t)[28G[1@1)[29G[1@ )
+[K
+  )[2A[30G[30G[1@l[80G) [K)[A[31G[31G[1@i[79G)[K
+))[A[32G[32G[1@s)
+ ))[A[33G[33G[1@t
+) ))[A[34G[34G[1@2[80G[K
+2) ))[A[35G) (sqrt (+ (expt (- x1 x[56G[P[79G 22) ))[K[A[56G[55G[P[80G)) ))[K[A[55G[55G[1@(
+) ))[A[56G[56G[1@c[80G[K
+2) ))[A[57G[57G[1@a 
+[1@ 2[A[58G[58G[1@r
+[1@) [A[59G[60G[1@ 
+[1@2)[A[60G[60G[1@l[80G[K
+[1@y2[A[61G[61G[1@i 
+[1@ y[A[62G[62G[1@s
+[1@1 [A[63G[63G[1@t[80G[K
+[1@y1[A[64G[64G[1@1 
+[1@ y[A[65G[65G[1@)
+[1@- [A[66G x2[68G[P[80G--[P [A[68G[67G[P)
+[Py[A[67G[67G[1@()
+[1@ y[A[68G[68G[1@c
+[1@- [A[69G[69G[1@a[80G[K
+[1@(-[A[70G[70G[1@r)
+[1@ ([A[71G[71G[1@ 
+[1@t [A[72G[72G[1@l
+[1@pt[A[73G[73G[1@i
+[1@xp[A[74G[74G[1@s
+[1@ex[A[75G[75G[1@t) 2)[K
+[1@(e[A[76G[76G2) 2)([1@ ([A[77G[78G) 2 [81G[1@) [A[78G) 
+) (expt (- [12G[1@(y[13G[1@cy[14G[1@ay[15G[1@dy[16G[1@dy[17G[1@ry[18G[1@ y[19G[1@ly[20G[1@iy[21G[1@sy[22G[1@ty[23G[1@1y[24G[1@ y[24G[Py[24G[1@)yy1[26G[P [25G[P [25G[1@( [25G[P [26G[1@ y[26G[1@( [27G[1@c [28G[1@a [29G[1@d [30G[1@d [31G[1@r [33G[1@ y y2[35G[P)[34G[P)[33G[P)[33G[1@l)[34G[1@i)[35G[1@s)[36G[1@t)[37G[1@2)[39G[1@) ) 2) [46G)
+
+; readline-input:31:2: read-syntax: unexpected `)` [,bt for context]
+> > (define (line-length list1 list2) (sqrt (+ (expt (- (car list1) (car list2)) 2 ) (expt (- (caddr list1) (caddr list2)) 2) )))
+  )  [K
+> (line [8G-length '(7 4) '(10 8))
+; caddr: contract violation
+;   expected: (cons/c any/c (cons/c any/c pair?))
+;   given: '(7 4)
+; [,bt for context]
+> > (line-length '(7 4) '(10 8))> ([8@define ([24Glist1 list2) (sqrt (+ (expt (- (car list1) (car list2)) 2 ) (expt (- (caddr list1) (caddr list2)) 2) )))
+ [A[47Gpt (- (caddr list1) (caddr l
+  )[2A> (line-length 7 4 10 8)> ([8@define ([24Gx1 y1 x2 y2) (sqrt (+ (expt (- x1 x2) 2) (expt (- y1 y2) 2) ))
+  )[A> ([8P[16G7 4 10 8)[K
+[K[A[25G> ([8@define ([24Glist1 list2) (sqrt (+ (expt (- (car list1) (car list2)) 2) (expt (- (caddr list1) (caddr list2)) 2) )))
+  ) [K[A> ([8P[16G'(7 4) '(10 8))[K
+[K[A[31G> [K> > 
+  
+  
+  
+  
+  
+  
+  ; user break [,bt for context]
+
+
+> > (line-length '(7 4) '(10 8))> ([8@define ([24Glist1 list2) (sqrt (+ (expt (- (car list1) (car list2)) 2) (expt (- (caddr list1) (caddr list2)) 2) )))
+ [A[127G)[126G[K
+
+  )
+> > (define (line-length list1 list2) (sqrt (+ (expt (- (car list1) (car list2)) 2) (expt (- (caddr list1) (caddr list2)) 2) ))
+
+  )[2A> ([8P[16G'(7 4) '(10 8))[K
+[K
+[K[2A[31G
+; caddr: contract violation
+;   expected: (cons/c any/c (cons/c any/c pair?))
+;   given: '(7 4)
+; [,bt for context]
+> > (line-length '(7 4) '(10 8))> ([8@define ([24Glist1 list2) (sqrt (+ (expt (- (car list1) (car list2)) 2) (expt (- (caddr list1) (caddr list2)) 2) ))
+
+  ) )[K)[K[A )
+[K[A )[K[A[126G)
+[K[A[126Gr[97G[P [96G[P [95G[P [95G[1@r [97G[1@ l[97G[1@( [98G[1@) [98G[P [98G[1@c [99G[1@a [100G[1@d [101G[1@r [101G[P [100G[P [99G[P [99G[1@d [100G[1@r [101G[1@(  list1)[101G[P  list1)[108G[1@)  (caddr[115G[P [114G[P [113G[P [113G[1@r [115G[1@ l[115G[1@( [116G[1@c [117G[1@d [118G[1@r [120G[1@ l list2)
+  )
+> > (define (line-length list1 list2) (sqrt (+ (expt (- (car list1) (car list2)) 2) (expt (- (car (cdr list1)) (car (cdr  list2)) 2) )))
+  )  [K[A[135G[128G[1@) 
+
+> > (define (line-length list1 list2) (sqrt (+ (expt (- (car list1) (car list2)) 2) (expt (- (car (cdr list1)) (car (cdr  list2))) 2) )))
+ [A[128G[P 
+  )[A> ([8P[16G'(7 4) '(10 8))[K
+[K[A[31G
+5
+> ^D
+[?2004hakozina2@n01-36:~/i471a/submit/lab3$ [?2004l
+exit
+
+Script done on 2023-09-14 17:52:42-04:00 [COMMAND_EXIT_CODE="0"]
