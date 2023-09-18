@@ -3,7 +3,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-import org.json.simple.JSONObject;
+//import org.json.simple.JSONObject;
 import java.util.*;
 
 class Token {
@@ -23,7 +23,7 @@ class Token {
 
 public class Parser {
 
-//EBNF grammar for the declrations language
+    //EBNF grammar for the declrations language
 /*
     program
     : declaration program
@@ -75,11 +75,11 @@ public class Parser {
     public static Token lookahead;
 
     public static Token nextToken() {
-            if (index >= tokens.size()) {
-                return new Token("EOF", "<EOF>");
-            } else {
-                return tokens.get(index++);
-            }
+        if (index >= tokens.size()) {
+            return new Token("EOF", "<EOF>");
+        } else {
+            return tokens.get(index++);
+        }
     }
     public static boolean peek(String kind) {
         return lookahead.kind.equals(kind);
@@ -103,33 +103,34 @@ public class Parser {
     }
 
     public static Object declaration() {
-        Object val1 = declarationTypeSpecifier();
-        Object val2 = expression();
+        String decl = "\"decl\": \"" +declarationTypeSpecifier() +"\"";
+        String struct = "\"struct\": " +expression();
         if(peek("=")) {
             consume("=");
-            Object val3 = identifier();
+            String id = "\"id\": " + identifier();
             if(peek(";")){
                 consume(";");
-                val1 += val2 + "=" + val3 + ";";
+                decl = "{" + decl + "," + id + "," + struct + "}";
             }
             else {
-                System.exit(0);
+                System.exit(1);
             }
         }
         else {
-            System.exit(0);
+            System.exit(1);
         }
-        return val1;
+        return decl;
     }
 
     public static Object declarationTypeSpecifier() {
         if(peek("RESERVED")){
             Object val = lookahead.lexeme;
-            consume(lookahead.lexeme);
+            consume("RESERVED");
             return val;
         }
         else {
-            System.exit(0);
+            System.err.println("Not a reserved token");
+            System.exit(1);
             return 0;
         }
     }
@@ -144,7 +145,7 @@ public class Parser {
             return objectStruct();
         }
         else {
-            System.exit(0);
+            System.exit(1);
             return 0;
         }
     }
@@ -164,10 +165,12 @@ public class Parser {
                 return val1 += val2 + val3;
             }
             else {
+                System.exit(1);
                 return 0;
             }
         }
         else{
+            System.exit(1);
             return 0;
         }
     }
@@ -187,35 +190,45 @@ public class Parser {
                 return val1 += val2 + val3;
             }
             else {
+                System.exit(1);
                 return 0;
             }
         }
         else{
+            System.exit(1);
             return 0;
         }
     }
     public static Object keyStruct() {
         if(peek("IDENTIFIER")){
             Object val1 = identifier();
-            consume("IDENTIFIER");
             if(peek(":")){
                 String val2 = lookahead.lexeme;
                 consume(":");
-                return val1 += val2 + expression();
+                return val1 + val2 + expression();
             }
             else {
-                return identifier();
+                return val1 + ": " + val1;
             }
         }
         else {
+            System.exit(1);
             return 0;
         }
     }
     public static Object identifier(){
-        return lookahead.lexeme;
+        if(peek("IDENTIFIER")){
+            Object val1 = lookahead.lexeme;
+            consume(lookahead.kind);
+            return "\"" + val1 + "\"";
+        }
+        else {
+            System.exit(1);
+            return 0;
+        }
     }
-    
-    public static Object parse(String text) {
+
+    public static ArrayList<Object> parse(String text) {
         tokens = scan(text);
         index = 0;
         lookahead = nextToken();
@@ -225,21 +238,18 @@ public class Parser {
 
     public static ArrayList<Token> scan(String text) {
         ArrayList<Token> tokens = new ArrayList<>();
-
+        //System.out.println(text);
         Pattern declarTypeSpecPattern = Pattern.compile("\\b(const|let)\\b");
         Pattern identifierPattern = Pattern.compile("[a-zA-Z_][a-zA-Z_0-9]*");
-        Pattern ignoreSpaceComm = Pattern.compile("^(\\s*|\\s*//.*)");
-        Pattern singleCharPattern = Pattern.compile("[=;,{}\\[\\]]");
-        // Pattern singleCharPattern = Pattern.compile("^(.)");
-        // Pattern objectStructPattern = Pattern.compile("\\{" + identifierPattern.pattern() + "\\s*:\\s*(identifier|" + arrayStructPattern.pattern() + "|" + objectStructPattern.pattern() + ")(," + identifierPattern.pattern() + "\\s*:\\s*(identifier|" + arrayStructPattern.pattern() + "|" + objectStructPattern.pattern() + "))*\\}");
-        Pattern symbolPattern = Pattern.compile("[=;,{}\\[\\]]"); 
+        Pattern ignoreSpaceComm = Pattern.compile("//.*|/\\*.*?\\*/|\\s+");
+        Pattern singleCharPattern = Pattern.compile("[=;:,{}\\[\\]]");
 
         Matcher matcher = Pattern.compile("(" +
-            declarTypeSpecPattern.pattern() + "|" +
-            ignoreSpaceComm.pattern() + "|" +
-            identifierPattern.pattern() + "|" +
-            singleCharPattern.pattern() + "|\\s+"
-            + ")").matcher(text);
+                declarTypeSpecPattern.pattern() + "|" +
+                ignoreSpaceComm.pattern() + "|" +
+                identifierPattern.pattern() + "|" +
+                singleCharPattern.pattern() + "|\\s+"
+                + ")").matcher(text);
 
         while (matcher.find()) {
             //String lexeme = matcher.group().trim();
@@ -258,7 +268,7 @@ public class Parser {
             } else {
                 throw new IllegalArgumentException("Invalid token: " + lexeme);
             }
-            
+
             tokens.add(new Token(kind, lexeme));
         }
         return tokens;
@@ -267,30 +277,36 @@ public class Parser {
 
 
     public static void main(String args[]){
-        String fileName = args[0];//the name of the file that has definition of the machine
+        //String fileName = args[0];//the name of the file that has definition of the machine
 
-        System.out.println(fileName);
+        //System.out.println(fileName);
 
-        File f = new File(fileName);
-        String filePath = f.getAbsolutePath();
-        File file = new File(filePath);
-        Scanner scanner = null;
+        // File f = new File(fileName);
+        // String filePath = f.getAbsolutePath();
+        // File file = new File(filePath);
+        // Scanner scanner = null;
+        Scanner scanner = new Scanner(System.in);
         String text = ""; //the whole file input into one string
-        try {
-            scanner = new Scanner(file);
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        }
+        // try {
+        //     scanner = new Scanner(file);
+        // } catch (FileNotFoundException e) {
+        //     e.printStackTrace();
+        // }
         while (scanner.hasNextLine()) {
-             String line = scanner.nextLine();
-             text += line + "\n";
+            String line = scanner.nextLine();
+            if (line.equals("EOF")) {
+                break; // Exit the loop when 'EOF' is encountered
+            }
+            text += line + "\n";
         }
-        ArrayList<Token> tokens = scan(text);
-        for (Token token : tokens) {
-            System.out.println(token);
+        //ArrayList<Token> tokens = scan(text);
+        ArrayList<Object> values = parse(text);
+
+        String res = "";
+        for (Object decl : values) {
+            if(res != "") res += ",";
+            res += decl;
         }
-        Object value = parse(text);
-        JSONObject jsonObject = new JSONObject();
-        // jsonObject.put("key", value);
+        System.out.println("[" + res + "]");
     }
 }
