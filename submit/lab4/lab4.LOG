@@ -1,0 +1,171 @@
+Script started on 2023-09-21 16:41:03-04:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="80" LINES="24"]
+[?2004hakozina2@n01-19:~/i471a/submit/lab4$ ls
+[?2004llab4.LOG
+[?2004hakozina2@n01-19:~/i471a/submit/lab4$ cd ..
+[?2004l[?2004hakozina2@n01-19:~/i471a/submit$ ls
+[?2004llab0  lab1  lab2  lab3	lab4  prj1-sol
+[?2004hakozina2@n01-19:~/i471a/submit$ cd lab4
+[?2004l[?2004hakozina2@n01-19:~/i471a/submit/lab4$ git status
+[?2004lOn branch lab4
+Your branch is up to date with 'origin/lab4'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31mlab4.LOG[m
+
+nothing added to commit but untracked files present (use "git add" to track)
+[?2004hakozina2@n01-19:~/i471a/submit/lab4$ git pull
+[?2004lAlready up to date.
+[?2004hakozina2@n01-19:~/i471a/submit/lab4$ rc[Kacket
+[?2004lWelcome to Racket v8.7 [cs].
+> (load "lab4-sol.scm")
+; open-input-file: cannot open input file
+;   path: /home/akozina2/i471a/submit/lab4/lab4-sol.scm
+;   system error: No such file or directory; errno=2
+; [,bt for context]
+> ^D
+[?2004hakozina2@n01-19:~/i471a/submit/lab4$ racketgit pullstatus[3Pcd lab4ls[Kcd ..[3Plsjava cs458/as1/Trans 7 3421567 output.txt Test.txt dec[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C.as1.
+[C[C[C[C[C[C[C[C[C[C[C[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C/as1/
+[C[C[C[C[C[C[C[C[C[C[C[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccd ..[3Pls[K[Kemacs lab4-sol.scm
+[?2004l^Z
+[1]+  Stopped                 emacs lab4-sol.scm
+[?2004hakozina2@n01-19:~/i471a/submit/lab4$ racjet
+[?2004lbash: racjet: command not found
+[?2004hakozina2@n01-19:~/i471a/submit/lab4$ racket
+[?2004lWelcome to Racket v8.7 [cs].
+> (load "lab4-sol.scm")
+; lab4-sol.scm:4:8: let: bad syntax (not an identifier and expression for a
+;   binding)
+;   at: discriminant
+;   in: (let (discriminant) (sqrt (- (expt b 2) (* 4 (* a c)))) (let
+;     (firstRoot) ((/ (- (discriminant) (- b)) (* 2 a))) (let (secondRoot) ((/
+;     (+ (discriminant) (-b)) (* 2 a))) (list firstRoot secondRoot))))
+; [,bt for context]
+> (quadratic-roots 3 7 2)
+; quadratic-roots: undefined;
+;  cannot reference an identifier before its definition
+;   in module: top-level
+; [,bt for context]
+> 
+[2]+  Stopped                 racket
+[?2004hakozina2@n01-19:~/i471a/submit/lab4$ racketjetemacs lab4-sol.scm
+[?2004l^Z
+[3]+  Stopped                 emacs lab4-sol.scm
+[?2004hakozina2@n01-19:~/i471a/submit/lab4$ racj[Kket
+[?2004lWelcome to Racket v8.7 [cs].
+> > (load "lab4-sol.scm")
+; lab4-sol.scm:4:8: let: bad syntax (not an identifier and expression for a
+;   binding)
+;   at: discriminant
+;   in: (let (discriminant) (sqrt (- (expt b 2) (* 4 a c))) (let (firstRoot)
+;     ((/ (- (discriminant) (- b)) (* 2 a))) (secondRoot) ((/ (+ (discriminant)
+;     (- b)) (* 2 a))) (list firstRoot secondRoot)))
+; [,bt for context]
+> 
+[4]+  Stopped                 racket
+[?2004hakozina2@n01-19:~/i471a/submit/lab4$ racketemacs lab4-sol.scm
+[?2004l^Z
+[5]+  Stopped                 emacs lab4-sol.scm
+[?2004hakozina2@n01-19:~/i471a/submit/lab4$ emacs lab4-sol.scm[12Pracket
+[?2004lWelcome to Racket v8.7 [cs].
+> > (load "lab4-sol.scm")
+; lab4-sol.scm:4:8: let: bad syntax (not an identifier and expression for a
+;   binding)
+;   at: discriminant
+;   in: (let (discriminant) (sqrt (- (expt b 2) (* 4 a c))) (let (firstRoot) (/
+;     (- (discriminant) (- b)) (* 2 a)) (secondRoot) (/ (+ (discriminant) (-
+;     b)) (* 2 a)) (list firstRoot secondRoot)))
+; [,bt for context]
+> 
+[6]+  Stopped                 racket
+[?2004hakozina2@n01-19:~/i471a/submit/lab4$ racketemacs lab4-sol.scm
+[?2004l^Z
+[7]+  Stopped                 emacs lab4-sol.scm
+[?2004hakozina2@n01-19:~/i471a/submit/lab4$ emacs lab4-sol.scm[12Pracket
+[?2004lWelcome to Racket v8.7 [cs].
+> > (load "lab4-sol.scm")
+; lab4-sol.scm:4:8: let: bad syntax (not an identifier and expression for a
+;   binding)
+;   at: (discriminant)
+;   in: (let ((discriminant) (sqrt (- (expt b 2) (* 4 a c)))) (let (firstRoot)
+;     (/ (- (discriminant) (- b)) (* 2 a)) (secondRoot) (/ (+ (discriminant) (-
+;     b)) (* 2 a)) (list firstRoot secondRoot)))
+; [,bt for context]
+> 
+[8]+  Stopped                 racket
+[?2004hakozina2@n01-19:~/i471a/submit/lab4$ racketemacs lab4-sol.scm
+[?2004l^Z
+[9]+  Stopped                 emacs lab4-sol.scm
+[?2004hakozina2@n01-19:~/i471a/submit/lab4$ emacs lab4-sol.scm[12Pracket
+[?2004lWelcome to Racket v8.7 [cs].
+> > (load "lab4-sol.scm")
+; lab4-sol.scm:4:8: let: bad syntax (not an identifier and expression for a
+;   binding)
+;   at: (discriminant)
+;   in: (let ((discriminant) (sqrt (- (expt b 2) (* 4 a c)))) (let (firstRoot)
+;     (/ (- (discriminant) (- b)) (* 2 a))) (let (secondRoot) (/ (+
+;     (discriminant) (- b)) (* 2 a))) (list firstRoot secondRoot))
+; [,bt for context]
+> 
+[10]+  Stopped                 racket
+[?2004hakozina2@n01-19:~/i471a/submit/lab4$ racketemacs lab4-sol.scm
+[?2004l^Z
+[11]+  Stopped                 emacs lab4-sol.scm
+[?2004hakozina2@n01-19:~/i471a/submit/lab4$ emacs lab4-sol.scm[12Pracket
+[?2004lWelcome to Racket v8.7 [cs].
+> > (load "lab4-sol.scm")
+; lab4-sol.scm:4:8: let: bad syntax (not an identifier and expression for a
+;   binding)
+;   at: (discriminant)
+;   in: (let ((discriminant) (sqrt (- (expt b 2) (* 4 a c)))) (list (/ (-
+;     (discriminant) (- b)) (* 2 a)) (list (/ (+ (discriminant) (- b)) (* 2
+;     a)))))
+; [,bt for context]
+> 
+[12]+  Stopped                 racket
+[?2004hakozina2@n01-19:~/i471a/submit/lab4$ racketemacs lab4-sol.scm[12Pracketemacs lab4-sol.scm
+[?2004l^Z
+[13]+  Stopped                 emacs lab4-sol.scm
+[?2004hakozina2@n01-19:~/i471a/submit/lab4$ emacs lab4-sol.scm[12Pracket
+[?2004lWelcome to Racket v8.7 [cs].
+> > (load "lab4-sol.scm")
+; lab4-sol.scm:4:8: let: bad syntax (not an identifier and expression for a
+;   binding)
+;   at: (discriminant)
+;   in: (let ((discriminant) (sqrt (- (expt b 2) (* 4 a c)))) (list (/ (-
+;     (discriminant) (- b)) (* 2 a)) ((/ (+ (discriminant) (- b)) (* 2 a)))))
+; [,bt for context]
+> 
+[14]+  Stopped                 racket
+[?2004hakozina2@n01-19:~/i471a/submit/lab4$ racketemacs lab4-sol.scm
+[?2004l^Z
+[15]+  Stopped                 emacs lab4-sol.scm
+[?2004hakozina2@n01-19:~/i471a/submit/lab4$ emacs lab4-sol.scm[12Pracket
+[?2004lWelcome to Racket v8.7 [cs].
+> > (load "lab4-sol.scm")
+; lab4-sol.scm:2:2: if: bad syntax
+;   in: (if (= a 0) (quote error) (let ((discriminant) (sqrt (- (expt b 2) (* 4
+;     a c))))) (list (/ (- (discriminant) (- b)) (* 2 a)) ((/ (+ (discriminant)
+;     (- b)) (* 2 a)))))
+; [,bt for context]
+> 
+[16]+  Stopped                 racket
+[?2004hakozina2@n01-19:~/i471a/submit/lab4$ racketemacs lab4-sol.scm
+[?2004l^Z
+[17]+  Stopped                 emacs lab4-sol.scm
+[?2004hakozina2@n01-19:~/i471a/submit/lab4$ emacs lab4-sol.scm[12Pracket
+[?2004lWelcome to Racket v8.7 [cs].
+> > (load "lab4-sol.scm")
+; lab4-sol.scm:2:2: if: bad syntax
+;   in: (if (= a 0) (quote error) (let ((discriminant) (sqrt (- (expt b 2) (* 4
+;     a c))))) (list (/ (- (discriminant) (- b)) (* 2 a)) ((/ (+ (discriminant)
+;     (- b)) (* 2 a)))))
+; [,bt for context]
+> 
+[18]+  Stopped                 racket
+[?2004hakozina2@n01-19:~/i471a/submit/lab4$ racketemacs lab4-sol.scm
+[?2004l^Z
+[19]+  Stopped                 emacs lab4-sol.scm
+[?2004hakozina2@n01-19:~/i471a/submit/lab4$ emacs lab4-sol.scm[12Pracket
+[?2004lWelcome to Racket v8.7 [cs].
