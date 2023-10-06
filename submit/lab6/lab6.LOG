@@ -1,0 +1,353 @@
+Script started on 2023-10-05 16:36:10-04:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="80" LINES="24"]
+[?2004hakozina2@n01-18:~/i471a/submit/lab6$ ls
+[?2004llab6.LOG
+[?2004hakozina2@n01-18:~/i471a/submit/lab6$ pro[K[K[Kemacs lab5[K6-sol.pro
+[?2004l^Z
+[1]+  Stopped                 emacs lab6-sol.pro
+[?2004hakozina2@n01-18:~/i471a/submit/lab6$ prolog
+[?2004lWelcome to SWI-Prolog (threaded, 64 bits, version 9.0.4)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+?- f(X,a[8G[K a[10G)[5G[11G=[11G[K = f(a, Y[20G)[15G[21G.
+X = Y, Y = a.
+
+?- f(X, a[10G)[5G[11G = f(a, X[20G)[15G[21G.
+X = a.
+
+?- f(X ,[8G[K[7G, a[10G)[5G[11G = f(b, X[20G)[15G[21G.
+[1;31mfalse.[0m
+
+?- f(X, Y[10G)[5G[11G = f(a [17G, a[20G)[15G[21G, g(X, Y[29G)[24G[30G = g(a, b[39G)[34G[40G.
+[1;31mfalse.[0m
+
+?- f(1, 2, z[13G)[5G[14G = f(_, _, X[26G)[18G[27G.
+X = z.
+
+?- head(a, tail(z, B[21G)[16G[22G, Y[25G)[8G[26G = head(-[34G[K_, tail(z, _[46G)[41G[47G[46G[K[45G[K[44G[43G[K[42G[K[41G[K[40G[K[39G[K[38G[K[37G[Ktail(X, _[46G)[41G[47G, _[50G)[33G[51G.
+X = z.
+
+?- cons(a, cons(b, cons(c, z[29G)[24G[30G[30G)[16G[31G[31G)[8G[32G = cons(_, cons(_, cons(_, X[60G)[55G[61G[61G)[47G[62G[62G)[39G[63G.
+X = z.
+
+?- length({[11G[K[1,2,3[17G][11G[18G, L[21G)[10G[22G.
+L = 3.
+
+?- length([a,b[15G][11G[16G, L[19G)[10G[20G.
+L = 2.
+
+?- ?- length([a,b], L).[15G[P,[14G[P,[14G L).[K[13G[13G[1@|,[14G[1@b,[15G[1@],[11G[16G
+[1;31mERROR: Type error: `list' expected, found `[a|b]' (a compound)
+ERROR: In:
+ERROR:   [11] [34mthrow(error(type_error(list,...),context(...,_54160)))[0m[0m[1;31m
+ERROR:    [9] [34mtoplevel_call(user:user: ...)[0m[0m[1;31m at /usr/lib/swi-prolog/boot/toplevel.pl:1173
+ERROR: 
+ERROR: Note: some frames are missing due to last-call optimization.
+ERROR: Re-run your program in debug mode (:- debug.) to get more detail.
+[0m?- length([a|[b[16G][b][17G][11G[18G, L[21G)[10G[22G.
+L = 2.
+
+?- ?- length([a|[b]], L).[16G[1@|][17G[1@c]
+[1;31mERROR: Type error: `list' expected, found `[a,b|c]' (a compound)
+ERROR: In:
+ERROR:   [11] [34mthrow(error(type_error(list,...),context(...,_4040)))[0m[0m[1;31m
+ERROR:    [9] [34mtoplevel_call(user:user: ...)[0m[0m[1;31m at /usr/lib/swi-prolog/boot/toplevel.pl:1173
+ERROR: 
+ERROR: Note: some frames are missing due to last-call optimization.
+ERROR: Re-run your program in debug mode (:- debug.) to get more detail.
+[0m?- [1,2,3,4[12G][4G[13G = [-[17G[K_,[_[21G}[21G[K|X[23G][19G[24G[24G][16G[25G.
+[1;31mfalse.[0m
+
+?- ?- [1,2,3,4] = [_,[_|X]].[18G[1@|,,[19G[P[
+X = [3, 4].
+
+?- ?- [1,2,3,4] = [_|[_|X]].[18G[1@_|[18G[1@,_[19G[1@[__|[_|X]][28G].[16G[29G
+[1;31mfalse.[0m
+
+?- ?- [1,2,3,4] = [_,[_|[_|X]]].[28G.[K[19G[P_
+X = [4].
+
+?- ?- [1,2,3,4] = [_,_|[_|X]].[17G[1@X_[18G[1@|_
+[1;31mERROR: Syntax error: Unexpected comma or bar in rest of list
+ERROR: [1,2,3,4] = [X|
+ERROR: ** here **
+ERROR: _,_|[_|X]] . 
+[0m?- ?- [1,2,3,4] = [X|_,_|[_|X]].[17G[P|
+[1;31mERROR: Syntax error: double_bar_outside_quasiquotation
+ERROR: [1,2,3,4] =
+ERROR: ** here **
+ERROR:  [|_,_|[_|X]] . 
+[0m?- ?- [1,2,3,4] = [|_,_|[_|X]].[17G[1@X|[30G[17G[2P_[28G[24G]].[K[24G_]].[17G[1@X_[18G[1@|_
+[1;31mERROR: Syntax error: Unexpected comma or bar in rest of list
+ERROR: [1,2,3,4] = [X|
+ERROR: ** here **
+ERROR: _,_|[_|_]] . 
+[0m?- ?- [1,2,3,4] = [X|_,_|[_|_]].[17G[P[25GX]].[17G[1@X|[30G[17G[2P_[28G
+X = [4].
+
+?- ?- [1,2,3,4] = [_,_|[_|X]].[17G[1@X__[18G[P,,[18G[P_[18G[1@|_
+[1;31mERROR: Syntax error: Unexpected comma or bar in rest of list
+ERROR: [1,2,3,4] = [X|
+ERROR: ** here **
+ERROR: _|[_|X]] . 
+[0m?- ?- [1,2,3,4] = [X|_|[_|X]].[17G_,[28G[27G[K[26G[K[25G[K[24G[K[23G[K[22G[K[21G[K[20G[K,X|_[24G][16G[25G.
+X = 3.
+
+?- ?- [1,2,3,4] = [_,_,X|_].[19G[P,[19G[PX[17G[P,,[17G[PXX|_[20G,].[21G ].[22G_].[23G,].[24G ].[25G_].[26G,]., _, _,[26G].[K[25G].[K[24G].[K[23G].[K[22G].[K[21G].[K[20G].[K[19G].[K[18G].[K[17G].[K[17G[].[18G_].[19G|].[20GX].][22G,.[22G.[K[22G}.[22G.[K[22G|.[23G_.[24G].[16G[25G
+[1;31mfalse.[0m
+
+?- ?- [1,2,3,4] = [[_|X]|_].[22G,|_].
+[1;31mERROR: Syntax error: Operand expected, unquoted comma or bar found
+ERROR: [1,2,3,4] = [[_|X]
+ERROR: ** here **
+ERROR: ,|_] . 
+[0m?- ?- [1,2,3,4] = [[_|X],|_].[22G|_].[K
+[1;31mfalse.[0m
+
+?- ?- [1,2,3,4] = [[_|X]|_].[22G |_].
+[1;31mfalse.[0m
+
+?- ?- [1,2,3,4] = [[_|X] |_].[26G[K[25G[K[24G[K[23G[K[22G[21G[K[20G[K[19G[K[18G[K[17G[K[16G[K[[17G][]][17G[K[16G[K[15G?- [[1@[11,2[9G[1@],[5G[10G,3,4] = [[_|X[23G][19G[24G|_[26G][18G[27G.
+X = [2].
+
+?- 
+[2]+  Stopped                 prolog
+[?2004hakozina2@n01-18:~/i471a/submit/lab6$ ls
+[?2004llab6.LOG  lab6-sol.pro
+[?2004hakozina2@n01-18:~/i471a/submit/lab6$ emacs lab6-sol.pro
+[?2004l^Z
+[3]+  Stopped                 emacs lab6-sol.pro
+[?2004hakozina2@n01-18:~/i471a/submit/lab6$ prolog
+[?2004lWelcome to SWI-Prolog (threaded, 64 bits, version 9.0.4)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+?- [?- ['lab6-sol.pro[18G'[5G[19G[19G][4G[20G.
+[1mtrue.[0m
+
+?- sum_lengths([[1, 2[22G][17G[23G, [3, [4, 5[34G][29G[35G, 6[38G][25G[39G, [7, 8[46G][41G[47G, [9[51G][9][52G][16G[53G, Z[56G)[15G[57G.
+[1;31mERROR: Unknown procedure: sum_length/2
+ERROR:   However, there are definitions for:
+ERROR:         sum_lengths/2
+ERROR: 
+ERROR: In:
+ERROR:   [11] [34msum_length([[3|...],...|...],_186)[0m[0m[1;31m
+ERROR:   [10] [34msum_lengths('<garbage_collected>',_230)[0m[0m[1;31m at /home/akozina2/i471a/submit/lab6/lab6-sol.pro:3
+ERROR:    [9] [34mtoplevel_call('<garbage_collected>')[0m[0m[1;31m at /usr/lib/swi-prolog/boot/toplevel.pl:1173
+[0m   [1;35mException: [0m(11) sum_length([[3, [4, 5], 6], [7, 8], [9]], _120) ? Unknown option (h for help)
+   [1;35mException: [0m(11) sum_length([[3, [4, 5], 6], [7, 8], [9]], _120) ? Unknown option (h for help)
+   [1;35mException: [0m(11) sum_length([[3, [4, 5], 6], [7, 8], [9]], _120) ? 
+[4]+  Stopped                 prolog
+[?2004hakozina2@n01-18:~/i471a/submit/lab6$ [Kakozina2@n01-18:~/i471a/submit/lab6$ prologemacs lab6-sol.pro
+[?2004l^Z
+[5]+  Stopped                 emacs lab6-sol.pro
+[?2004hakozina2@n01-18:~/i471a/submit/lab6$ emacs lab6-sol.pro[12Pprolog
+[?2004lWelcome to SWI-Prolog (threaded, 64 bits, version 9.0.4)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+?- ?- ?- ?- ?- ?- ?- ?- ?- [?- ['lab6-sol.pro[18G'[5G[19G[19G][4G[20G.
+[1mtrue.[0m
+
+?- sum_lengths([[1, 2[22G][17G[23G, [3, [4, 5[34G][29G[35G, 6[38G][25G[39G, [7, 8[46G][41G[47G, [9[51G][9][52G][16G[53G, Z[56G)[15G[57G.
+[1;31mERROR: Unknown procedure: sum_length/2
+ERROR:   However, there are definitions for:
+ERROR:         sum_lengths/2
+ERROR: 
+ERROR: In:
+ERROR:   [11] [34msum_length([[3|...],...|...],_186)[0m[0m[1;31m
+ERROR:   [10] [34msum_lengths('<garbage_collected>',_230)[0m[0m[1;31m at /home/akozina2/i471a/submit/lab6/lab6-sol.pro:3
+ERROR:    [9] [34mtoplevel_call('<garbage_collected>')[0m[0m[1;31m at /usr/lib/swi-prolog/boot/toplevel.pl:1173
+[0m   [1;35mException: [0m(11) sum_length([[3, [4, 5], 6], [7, 8], [9]], _120) ? 
+[6]+  Stopped                 prolog
+[?2004hakozina2@n01-18:~/i471a/submit/lab6$ prologemacs lab6-sol.pro
+[?2004l^Z
+[7]+  Stopped                 emacs lab6-sol.pro
+[?2004hakozina2@n01-18:~/i471a/submit/lab6$ emacs lab6-sol.pro[12Pprolog
+[?2004lWelcome to SWI-Prolog (threaded, 64 bits, version 9.0.4)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+?- ?- [?- ['lab6-sol.pro[18G'[5G[19G[19G][4G[20G.
+[1mtrue.[0m
+
+?- sum_lengths([[1, 2[22G][17G[23G, [3, [4, 5[34G][29G[35G, 6[38G][25G[39G, [7, 8[46G][41G[47G, [9[51G][9][52G][16G[53G, Z[56G)[15G[57G.
+[1;31mERROR: Unknown procedure: (+)/2
+ERROR: In:
+ERROR:   [14] [34mlength([9],_184)+0[0m[0m[1;31m
+ERROR:   [13] [34msum_lengths('<garbage_collected>','<garbage_collected>')[0m[0m[1;31m at /home/akozina2/i471a/submit/lab6/lab6-sol.pro:4
+ERROR:   [12] [34msum_lengths('<garbage_collected>',_242)[0m[0m[1;31m at /home/akozina2/i471a/submit/lab6/lab6-sol.pro:3
+ERROR:   [11] [34msum_lengths('<garbage_collected>',_268)[0m[0m[1;31m at /home/akozina2/i471a/submit/lab6/lab6-sol.pro:3
+ERROR:   [10] [34msum_lengths('<garbage_collected>',_294)[0m[0m[1;31m at /home/akozina2/i471a/submit/lab6/lab6-sol.pro:3
+ERROR:    [9] [34mtoplevel_call('<garbage_collected>')[0m[0m[1;31m at /usr/lib/swi-prolog/boot/toplevel.pl:1173
+[0m   [1;35mException: [0m(14) length([9], _106)+0 ? 
+[8]+  Stopped                 prolog
+[?2004hakozina2@n01-18:~/i471a/submit/lab6$ prologemacs lab6-sol.pro
+[?2004l^Z
+[9]+  Stopped                 emacs lab6-sol.pro
+[?2004hakozina2@n01-18:~/i471a/submit/lab6$ emacs lab6-sol.pro[12Pprolog
+[?2004lWelcome to SWI-Prolog (threaded, 64 bits, version 9.0.4)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+?- [?- ['lab6-sol.pro[18G'[5G[19G[19G][4G[20G.
+[31mWarning: /home/akozina2/i471a/submit/lab6/lab6-sol.pro:2:
+Warning:    Singleton variables: [X]
+[0m[1mtrue.[0m
+
+?- 
+[10]+  Stopped                 prolog
+[?2004hakozina2@n01-18:~/i471a/submit/lab6$ prologemacs lab6-sol.pro
+[?2004l^Z
+[11]+  Stopped                 emacs lab6-sol.pro
+[?2004hakozina2@n01-18:~/i471a/submit/lab6$ emacs lab6-sol.pro[12Pprolog
+[?2004lWelcome to SWI-Prolog (threaded, 64 bits, version 9.0.4)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+?- [?- ['lab6-sol.pro[18G'[5G[19G[19G][4G[20G.
+[1;31mERROR: /home/akozina2/i471a/submit/lab6/lab6-sol.pro:5:2: Syntax error: Operator expected
+[0m[1mtrue.[0m
+
+?- ?- ?- ?- ?- ?- ?- ['lab6-sol.pro'].[21G[20G[K[19G[K[18G[K[17G[K[16G[K[15G[K[14G[K[13G[K[12G[K[11G[K[10G[K[9G[K[8G[K[7G[K[6G[K?- [[K?- [K
+[12]+  Stopped                 prolog
+[?2004hakozina2@n01-18:~/i471a/submit/lab6$ prologemacs lab6-sol.pro
+[?2004l^Z
+[13]+  Stopped                 emacs lab6-sol.pro
+[?2004hakozina2@n01-18:~/i471a/submit/lab6$ emacs lab6-sol.pro[12Pprolog
+[?2004lWelcome to SWI-Prolog (threaded, 64 bits, version 9.0.4)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+?- [?- [?- [?- [?- [?- [?- [?- [?- [?- [?- [?- [?- [?- [?- [?- [?- [?- [?- [?- ['lab6-sol.pro[18G'[5G[19G[19G][4G[20G.
+[1;31mERROR: /home/akozina2/i471a/submit/lab6/lab6-sol.pro:5:2: Syntax error: Operator expected
+[0m[1mtrue.[0m
+
+?- 
+[14]+  Stopped                 prolog
+[?2004hakozina2@n01-18:~/i471a/submit/lab6$ prologemacs lab6-sol.pro
+[?2004l^Z
+[15]+  Stopped                 emacs lab6-sol.pro
+[?2004hakozina2@n01-18:~/i471a/submit/lab6$ emacs lab6-sol.pro[12Pprolog
+[?2004lWelcome to SWI-Prolog (threaded, 64 bits, version 9.0.4)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+?- [?- ['lab6-sol.pro[18G'[5G[19G[19G][4G[20G[20G][20G[K.
+[1mtrue.[0m
+
+?- sum_lengths([[1, 2[22G][17G[23G, [3, [4, 5[34G][29G[35G, 6[38G][25G[39G, [7, 8[46G][41G[47G, [9[51G][9][52G][16G[53G, Z[56G)[15G[57G.
+Z = 8.
+
+?- 
+[16]+  Stopped                 prolog
+[?2004hakozina2@n01-18:~/i471a/submit/lab6$ prologemacs lab6-sol.pro
+[?2004l^Z
+[17]+  Stopped                 emacs lab6-sol.pro
+[?2004hakozina2@n01-18:~/i471a/submit/lab6$ emacs lab6-sol.pro[12Pprolog
+[?2004lWelcome to SWI-Prolog (threaded, 64 bits, version 9.0.4)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+?- N = 1+2
+|    
+[18]+  Stopped                 prolog
+[?2004hakozina2@n01-18:~/i471a/submit/lab6$ prolog
+[?2004lWelcome to SWI-Prolog (threaded, 64 bits, version 9.0.4)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+?- N = 1+2.
+N = 1+2.
+
+?- N is 1 + 2.
+N = 3.
+
+?- N is +(1, 2[15G)[10G[16G.
+N = 3.
+
+?- N is 1 + 2*3.
+N = 7.
+
+?- 5 is 7 mod 2.
+[1;31mfalse.[0m
+
+?- X is 7 mod 2.
+X = 1.
+
+?- X is -7 mod 3.
+X = 2.
+
+?- N is sqrt(4[15G)(4).
+N = 2.0.
+
+?- N = pi.
+N = pi.
+
+?- N is pi.
+N = 3.141592653589793.
+
+?- 
+[19]+  Stopped                 prolog
+[?2004hakozina2@n01-18:~/i471a/submit/lab6$ prologemacs lab6-sol.pro
+[?2004l^Z
+[20]+  Stopped                 emacs lab6-sol.pro
+[?2004hakozina2@n01-18:~/i471a/submit/lab6$ emacs lab6-sol.pro[12Pprolog
+[?2004lWelcome to SWI-Prolog (threaded, 64 bits, version 9.0.4)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+?- [?- ['lab6-sol.pro[18G'[5G[19G[19G][4G[20G.
+[1mtrue.[0m
+
+?- quadratic_roots(2, 5, 2, Z[30G)[19G[31G.
+[1;31mfalse.[0m
+
+?- ?- quadratic_roots(2, 5, 2, Z).?- ['lab6-sol.pro'].[K
+[21]+  Stopped                 prolog
+[?2004hakozina2@n01-18:~/i471a/submit/lab6$ prologemacs lab6-sol.pro
+[?2004l^Z
+[22]+  Stopped                 emacs lab6-sol.pro
+[?2004hakozina2@n01-18:~/i471a/submit/lab6$ emacs lab6-sol.pro[12Pprolog
+[?2004lWelcome to SWI-Prolog (threaded, 64 bits, version 9.0.4)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+?- ?- ?- ?- [?- ['lab6-sol.pro[18G'[5G[19G[19G][4G[20G.
+[1mt
