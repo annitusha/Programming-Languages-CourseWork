@@ -171,13 +171,13 @@
       (let ((operator (car expr)) (operands (cdr expr)))
         (cond
           ((equal? operator 'add)
-            (list '+ (compile-expr1 (car operands)) (compile-expr1 (cadr operands))))
+            (list '+ (compile-expr3 (car operands)) (compile-expr3 (cadr operands))))
           ((equal? operator 'sub)
-            (list '- (compile-expr1 (car operands)) (compile-expr1 (cadr operands))))
+            (list '- (compile-expr3 (car operands)) (compile-expr3 (cadr operands))))
           ((equal? operator 'mul)
-            (list '* (compile-expr1 (car operands)) (compile-expr1 (cadr operands))))
+            (list '* (compile-expr3 (car operands)) (compile-expr3 (cadr operands))))
           ((equal? operator 'uminus)
-            (list '- (compile-expr1 (car operands)))))))))
+            (list '- (compile-expr3 (car operands)))))))))
 
   
   
