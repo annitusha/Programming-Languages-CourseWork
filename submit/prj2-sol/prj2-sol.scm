@@ -161,6 +161,23 @@
 ;; similar to compile-expr1.  Should merely wrap the compiled expr
 ;; in a let; it should not attempt to lookup symbols in env.
 (define (compile-expr2 expr env)
+  (list 'let env (compile-expr3 expr)))
+
+(define (compile-expr3 expr)
+  (cond 
+    ((number? expr) expr)
+    ((symbol? expr) expr)
+    ((list? expr)
+      (let ((operator (car expr)) (operands (cdr expr)))
+        (cond
+          ((equal? operator 'add)
+            (list '+ (compile-expr3 (car operands)) (compile-expr3 (cadr operands))))
+          ((equal? operator 'sub)
+            (list '- (compile-expr3 (car operands)) (compile-expr3 (cadr operands))))
+          ((equal? operator 'mul)
+            (list '* (compile-expr3 (car operands)) (compile-expr3 (cadr operands))))
+          ((equal? operator 'uminus)
+            (list '- (compile-expr3 (car operands)))))))))
 
 
 
