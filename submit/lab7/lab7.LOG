@@ -1,0 +1,240 @@
+Script started on 2023-11-02 16:38:08-04:00 [TERM="xterm-256color" TTY="/dev/pts/30" COLUMNS="54" LINES="13"]
+[?2004hakozina2@remote05:~/i471a/submit/lab7$ [7mghci  --start G[27m[7mH[27m[7mC REPL[27m[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cghci  --start GHC REPL
+[?2004lGHCi, version 9.0.2: https://www.haskell.org/ghc/  :? for help
+ghc: unrecognised flag: --start
+
+Usage: For basic information, try the `--help' option.
+[?2004hakozina2@remote05:~/i471a/submit/lab7$ [Kakozina2@remote05:~/i471a/submit/lab7$ [Kakozina2@remote05:~/i471a/submit/lab7$ ghci
+[?2004lGHCi, version 9.0.2: https://www.haskell.org/ghc/  :? for help
+[?1h=ghci> :l "lab7-sol.hs"E[?1l>[1 of 1] Compiling Main             ( lab7-sol.hs, interpreted )
+Ok, one module loaded.
+[?1h=ghci> :t addE[?1l>add :: Num a => a -> a -> a
+[?1h=ghci> :t plusE[?1l>plus :: Integer -> Integer -> Integer
+[?1h=ghci> :t plus'E[?1l>plus' :: Num a => a -> a -> a
+[?1h=ghci> :t concE[?1l>conc :: [a] -> [a] -> [a]
+[?1h=ghci> add 2.0 3.0E[?1l>5.0
+[?1h=ghci> plus 2.0 3.0E[?1l>
+[;1m<interactive>:7:6: [;1m[31merror:[0m[0m[;1m[0m[0m[;1m
+    • No instance for (Fractional Integer)
+        arising from the literal ‘2.0’
+    • In the first argument of ‘plus’, namely ‘2.0’
+      In the expression: plus 2.0 3.0
+      In an equation for ‘it’: it = plus 2.0 3.0[0m[0m
+[?1h=ghci> plus' 2.0 3.0E[?1l>5.0
+[?1h=ghci> conc [1] [2, 3]E[?1l>[1,2,3]
+[?1h=ghci> conc [[1]] [[2, 3]]E[?1l>[[1],[2,3]]
+[?1h=ghci> ghci> ghci> conc "hello" "world"E[?1l>"helloworld"
+[?1h=ghci> conc ["hello"] ["world"]E[?1l>["hello","world"]
+[?1h=ghci> conc (conc ["hello"] ["world"]) ["goodbye"]E[?1l>["hello","world","goodbye"]
+[?1h=ghci> conc (conc ["hello"] ["world"]) [42]E[?1l>
+[;1m<interactive>:14:34: [;1m[31merror:[0m[0m[;1m[0m[0m[;1m
+    • No instance for (Num String) arising from the literal ‘42’
+    • In the expression: 42
+      In the second argument of ‘conc’, namely ‘[42]’
+      In the expression: conc (conc ["hello"] ["world"]) [42][0m[0m
+[?1h=ghci> ghci> ghci> add10 5E[?1l>15
+[?1h=ghci> plus5 5E[?1l>10
+[?1h=ghci> concHello hiE[?1l>
+[;1m<interactive>:17:11: [;1m[31merror:[0m[0m[;1m[0m[0m[;1m
+    • Variable not in scope: hi :: [Char]
+    • Perhaps you meant ‘pi’ (imported from Prelude)[0m[0m
+[?1h=ghci> concHello hi[K[K[hi]E[?1l>
+[;1m<interactive>:18:12: [;1m[31merror:[0m[0m[;1m[0m[0m[;1m
+    • Variable not in scope: hi :: Char
+    • Perhaps you meant ‘pi’ (imported from Prelude)[0m[0m
+[?1h=ghci> concHello "hi"E[?1l>"hellohi"
+[?1h=ghci> :rE[?1l>Ok, one module loaded.
+[?1h=ghci> first (12, "hello", [])E[?1l>
+[;1m<interactive>:21:7: [;1m[31merror:[0m[0m[;1m[0m[0m[;1m
+    • Couldn't match expected type: (a, b0)
+                  with actual type: (a1, String, [a0])
+    • In the first argument of ‘first’, namely ‘(12, "hello", [])’
+      In the expression: first (12, "hello", [])
+      In an equation for ‘it’: it = first (12, "hello", [])
+    • Relevant bindings include it :: a (bound at <interactive>:21:1)[0m[0m
+[?1h=ghci> first (12, "hello", [])E[?1l>
+[;1m<interactive>:22:7: [;1m[31merror:[0m[0m[;1m[0m[0m[;1m
+    • Couldn't match expected type: (a, b0)
+                  with actual type: (a1, String, [a0])
+    • In the first argument of ‘first’, namely ‘(12, "hello", [])’
+      In the expression: first (12, "hello", [])
+      In an equation for ‘it’: it = first (12, "hello", [])
+    • Relevant bindings include it :: a (bound at <interactive>:22:1)[0m[0m
+[?1h=ghci> let tuple = ("hello", 42) in fst tupleE[?1l>"hello"
+[?1h=ghci> let tuple = ("hello", 42) in snd tupleE[?1l>42
+[?1h=ghci> f[Klet tuple = ("hello", 42) in snd tuple[9Dfst tuple[38Dfirst (12, "hello", [])[KE[?1l>
+[;1m<interactive>:25:7: [;1m[31merror:[0m[0m[;1m[0m[0m[;1m
+    • Couldn't match expected type: (a, b0)
+                  with actual type: (a1, String, [a0])
+    • In the first argument of ‘first’, namely ‘(12, "hello", [])’
+      In the expression: first (12, "hello", [])
+      In an equation for ‘it’: it = first (12, "hello", [])
+    • Relevant bindings include it :: a (bound at <interactive>:25:1)[0m[0m
+[?1h=ghci> first (12, "hello", [])[C (12, "hello", [])[K[18D (12, "hello", [])[K[18D (12, "hello", [])[K[18D (12, "hello", [])[K[18Ds (12, "hello", [])[18Dt (12, "hello", [])[18D3 (12, "hello", [])[18DE[?1l>
+[;1m<interactive>:26:1: [;1m[31merror:[0m[0m[;1m[0m[0m[;1m
+    • Variable not in scope: fst3 :: (a0, String, [a1]) -> t
+    • Perhaps you meant ‘fst’ (imported from Prelude)[0m[0m
+[?1h=ghci> :rE[?1l>[1 of 1] Compiling Main             ( lab7-sol.hs, interpreted )
+Ok, one module loaded.
+[?1h=ghci> :r[2Dfst3 (12, "hello", [])E[?1l>12
+[?1h=ghci> fst3 (12, "hello", []) (12, "hello", [])[K[18D (12, "hello", [])[K[18D (12, "hello", [])[K[18D (12, "hello", [])[K[18Dn (12, "hello", [])[18D (12, "hello", [])[K[18Ds (12, "hello", [])[18Dn (12, "hello", [])[18Dd (12, "hello", [])[18Dr (12, "hello", [])[18D3 (12, "hello", [])[18D (12, "hello", [])[K[18D (12, "hello", [])[K[18D3 (12, "hello", [])[18DE[?1l>"hello"
+[?1h=ghci> sumFirst2[K[K[K[K[K[K[K[K[K:rE[?1l>[1 of 1] Compiling Main             ( lab7-sol.hs, interpreted )
+Ok, one module loaded.
+[?1h=ghci> sumFirst2 [2,4]E[?1l>*** Exception: lab7-sol.hs:32:1-16: Non-exhaustive patterns in function sumFirst2
+
+[?1h=ghci> sumFirst2 [2,4]2,4][K[4D(2,4][4D[C[C[C[C[K)E[?1l>
+[;1m<interactive>:32:11: [;1m[31merror:[0m[0m[;1m[0m[0m[;1m
+    • Couldn't match expected type: [a]
+                  with actual type: (a0, b0)
+    • In the first argument of ‘sumFirst2’, namely ‘(2, 4)’
+      In the expression: sumFirst2 (2, 4)
+      In an equation for ‘it’: it = sumFirst2 (2, 4)
+    • Relevant bindings include it :: a (bound at <interactive>:32:1)[0m[0m
+[?1h=ghci> sumFirst2 (2,4)[K[K[K[K[K[2,4,5]E[?1l>*** Exception: lab7-sol.hs:32:1-16: Non-exhaustive patterns in function sumFirst2
+
+[?1h=ghci> sumFirst2 [2,4,5][K[K[K[K[K[K2] [4]E[?1l>
+[;1m<interactive>:34:1: [;1m[31merror:[0m[0m[;1m[0m[0m[;1m
+    • Non type-variable argument in the constraint: Num ([a] -> t)
+      (Use FlexibleContexts to permit this)
+    • When checking the inferred type
+        it :: forall {a} {t}. (Num a, Num ([a] -> t)) => t[0m[0m
+[?1h=ghci> :rE[?1l>Ok, one module loaded.
+[?1h=ghci> :rE[?1l>[1 of 1] Compiling Main             ( lab7-sol.hs, interpreted )
+Ok, one module loaded.
+[?1h=ghci> sumFirst2 (2,4,5)E[?1l>
+[;1m<interactive>:37:11: [;1m[31merror:[0m[0m[;1m[0m[0m[;1m
+    • Couldn't match expected type: [a]
+                  with actual type: (a0, b0, c0)
+    • In the first argument of ‘sumFirst2’, namely ‘(2, 4, 5)’
+      In the expression: sumFirst2 (2, 4, 5)
+      In an equation for ‘it’: it = sumFirst2 (2, 4, 5)
+    • Relevant bindings include it :: a (bound at <interactive>:37:1)[0m[0m
+[?1h=ghci> sumFirst2 (2,4,5)[K[K[K[K[K[K[K[2,4,5]E[?1l>6
+[?1h=ghci> sumFirst2 [2,4,5]E[?1l>6
+[?1h=ghci> sumFirst2 [2,4,5],]6]E[?1l>6
+[?1h=ghci> sumFirst2 [2,4,5,6][C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K;[K:rE[?1l>[1 of 1] Compiling Main             ( lab7-sol.hs, interpreted )
+Ok, one module loaded.
+[?1h=ghci> :r[2DsumFirst2 [2,4,5,6]E[?1l>6
+[?1h=ghci> :rE[?1l>[1 of 1] Compiling Main             ( lab7-sol.hs, interpreted )
+Ok, one module loaded.
+[?1h=ghci> :r[2DsumFirst2 [2,4,5,6]E[?1l>6
+[?1h=ghci> :rE[?1l>[1 of 1] Compiling Main             ( lab7-sol.hs, interpreted )
+
+[;1mlab7-sol.hs:37:1: [;1m[31merror:[0m[0m[;1m[0m[0m[;1m
+    Multiple declarations of ‘fnFirst2’
+    Declared at: lab7-sol.hs:35:1
+                 lab7-sol.hs:37:1[0m[0m
+[;1m[34m   |[0m[0m
+[;1m[34m37 |[0m[0m [;1m[31mfnFirst2[0m[0m _ _ f2 = f2
+[;1m[34m   |[0m[0m[;1m[31m ^^^^^^^^[0m[0m
+Failed, no modules loaded.
+[?1h=ghci> :rr[KE[?1l>[1 of 1] Compiling Main             ( lab7-sol.hs, interpreted )
+
+[;1mlab7-sol.hs:37:19: [;1m[31merror:[0m[0m[;1m[0m[0m[;1m
+    • Couldn't match expected type ‘b’ with actual type ‘a -> a -> b’
+      ‘b’ is a rigid type variable bound by
+        the type signature for:
+          fnFirst2 :: forall a b. [a] -> (a -> a -> b) -> (a -> a -> b) -> b
+        at lab7-sol.hs:34:1-54
+    • In the expression: f2
+      In an equation for ‘fnFirst2’: fnFirst2 _ _ f2 = f2
+    • Relevant bindings include
+        f2 :: a -> a -> b (bound at lab7-sol.hs:37:14)
+        fnFirst2 :: [a] -> (a -> a -> b) -> (a -> a -> b) -> b
+          (bound at lab7-sol.hs:35:1)[0m[0m
+[;1m[34m   |[0m[0m
+[;1m[34m37 |[0m[0m fnFirst2 _ _ f2 = [;1m[31mf2[0m[0m
+[;1m[34m   |[0m[0m[;1m[31m                   ^^[0m[0m
+Failed, no modules loaded.
+[?1h=ghci> :rE[?1l>[1 of 1] Compiling Main             ( lab7-sol.hs, interpreted )
+
+[;1mlab7-sol.hs:37:19: [;1m[31merror:[0m[0m[;1m[0m[0m[;1m
+    • Couldn't match expected type ‘b’ with actual type ‘a -> a -> b’
+      ‘b’ is a rigid type variable bound by
+        the type signature for:
+          fnFirst2 :: forall a b. [a] -> (a -> a -> b) -> (a -> a -> b) -> b
+        at lab7-sol.hs:34:1-54
+    • In the expression: f2
+      In an equation for ‘fnFirst2’: fnFirst2 _ _ f2 = f2
+    • Relevant bindings include
+        f2 :: a -> a -> b (bound at lab7-sol.hs:37:14)
+        fnFirst2 :: [a] -> (a -> a -> b) -> (a -> a -> b) -> b
+          (bound at lab7-sol.hs:35:1)[0m[0m
+[;1m[34m   |[0m[0m
+[;1m[34m37 |[0m[0m fnFirst2 _ _ f2 = [;1m[31mf2[0m[0m
+[;1m[34m   |[0m[0m[;1m[31m                   ^^[0m[0m
+Failed, no modules loaded.
+[?1h=ghci> ghci> ghci> :rE[?1l>[1 of 1] Compiling Main             ( lab7-sol.hs, interpreted )
+
+[;1mlab7-sol.hs:36:1: [;1m[35mwarning:[0m[0m[;1m [[;1m[35m-Woverlapping-patterns[0m[0m[;1m][0m[0m[;1m
+    Pattern match is redundant
+    In an equation for ‘fnFirst2’: fnFirst2 (x : y : _) _ f2 = ...[0m[0m
+[;1m[34m   |[0m[0m
+[;1m[34m36 |[0m[0m [;1m[35mfnFirst2 (x:y:_) _ f2 = f2 x y[0m[0m
+[;1m[34m   |[0m[0m[;1m[35m ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+Ok, one module loaded.
+[?1h=ghci> fnFirst2 [3, 4] (+) (*)E[?1l>7
+[?1h=ghci> fnFirst2 [3, 4, 5] (+) (*)E[?1l>7
+[?1h=ghci> :rE[?1l>[1 of 1] Compiling Main             ( lab7-sol.hs, interpreted )
+
+[;1mlab7-sol.hs:35:28: [;1m[31merror:[0m[0m[;1m[0m[0m[;1m
+    • Couldn't match expected type ‘a’ with actual type ‘[a]’
+      ‘a’ is a rigid type variable bound by
+        the type signature for:
+          fnFirst2 :: forall a b. [a] -> (a -> a -> b) -> (a -> a -> b) -> b
+        at lab7-sol.hs:34:1-54
+    • In the second argument of ‘f1’, namely ‘y’
+      In the expression: f1 x y
+      In an equation for ‘fnFirst2’: fnFirst2 (x : y) f1 _ = f1 x y
+    • Relevant bindings include
+        f1 :: a -> a -> b (bound at lab7-sol.hs:35:16)
+        y :: [a] (bound at lab7-sol.hs:35:13)
+        x :: a (bound at lab7-sol.hs:35:11)
+        fnFirst2 :: [a] -> (a -> a -> b) -> (a -> a -> b) -> b
+          (bound at lab7-sol.hs:35:1)[0m[0m
+[;1m[34m   |[0m[0m
+[;1m[34m35 |[0m[0m fnFirst2 (x:y) f1 _ = f1 x [;1m[31my[0m[0m
+[;1m[34m   |[0m[0m[;1m[31m                            ^[0m[0m
+Failed, no modules loaded.
+[?1h=ghci> :rE[?1l>[1 of 1] Compiling Main             ( lab7-sol.hs, interpreted )
+
+[;1mlab7-sol.hs:35:11: [;1m[31merror:[0m[0m[;1m[0m[0m[;1m Expression syntax in pattern: x : y :[0m[0m
+[;1m[34m   |[0m[0m
+[;1m[34m35 |[0m[0m fnFirst2 ([;1m[31mx:y:[0m[0m) f1 _ = f1 x y
+[;1m[34m   |[0m[0m[;1m[31m           ^^^^[0m[0m
+Failed, no modules loaded.
+[?1h=ghci> :rE[?1l>[1 of 1] Compiling Main             ( lab7-sol.hs, interpreted )
+
+[;1mlab7-sol.hs:36:1: [;1m[35mwarning:[0m[0m[;1m [[;1m[35m-Woverlapping-patterns[0m[0m[;1m][0m[0m[;1m
+    Pattern match is redundant
+    In an equation for ‘fnFirst2’: fnFirst2 (x : y : _) _ f2 = ...[0m[0m
+[;1m[34m   |[0m[0m
+[;1m[34m36 |[0m[0m [;1m[35mfnFirst2 (x:y:_) _ f2 = f2 x y[0m[0m
+[;1m[34m   |[0m[0m[;1m[35m ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+Ok, one module loaded.
+[?1h=ghci> :rE[?1l>[1 of 1] Compiling Main             ( lab7-sol.hs, interpreted )
+Ok, one module loaded.
+[?1h=ghci> :r[2DfnFirst2 [3, 4, 5] (+) (*)E[?1l>12
+[?1h=ghci> fnFirst2 [3, 4, 5] (+) (*)[26D:r[K[2DfnFirst2 [3, 4, 5] (+) (*)[12D] (+) (*)[KE[?1l>7
+[?1h=ghci> :rE[?1l>[1 of 1] Compiling Main             ( lab7-sol.hs, interpreted )
+Ok, one module loaded.
+[?1h=ghci> cartesianProduct [1..4] [2..4]E[?1l>[(1,2),(1,3),(1,4),(2,2),(2,3),(2,4),(3,2),(3,3),(3,4),(4,2),(4,3),(4,4)]
+[?1h=ghci> cartesianProductIf [1..4] [2..4] (>)E[?1l>[(3,2),(4,2),(4,3)]
+[?1h=ghci> list[K[K[K[K:rE[?1l>[1 of 1] Compiling Main             ( lab7-sol.hs, interpreted )
+Ok, one module loaded.
+[?1h=ghci> listOfpairsE[?1l>
+[;1m<interactive>:61:1: [;1m[31merror:[0m[0m[;1m[0m[0m[;1m
+    • Variable not in scope: listOfpairs
+    • Perhaps you meant ‘listOfPairs’ (line 47)[0m[0m
+[?1h=ghci> ghci> listOfpairsairs[K[4DPairs[4DE[?1l>[(1,6),(2,17),(3,34),(4,57),(5,86),(6,121),(7,162),(8,209),(9,262),(10,321)]
+[?1h=ghci> ghci> [(x,3*x^2+2*x+1) | x <- [1..10]]E[?1l>[(1,6),(2,17),(3,34),(4,57),(5,86),(6,121),(7,162),(8,209),(9,262),(10,321)]
+[?1h=ghci> [(x, y) | x <- [1..10], let y = 3 * x^2 + 2 * x +  1, y `rem` 3 == 0]E[?1l>[(1,6),(4,57),(7,162),(10,321)]
+[?1h=ghci> ghci> ghci> ghci> ghci> ghci> ghci> ghci> ghci> ghci> ghci> ghci> ghci> :rE[?1l>[1 of 1] Compiling Main             ( lab7-sol.hs, interpreted )
+Ok, one module loaded.
+[?1h=ghci> oddEvenPairs 5E[?1l>[(1,2),(1,4),(3,2),(3,4),(5,2),(5,4)]
+[?1h=ghci> oddEvenPairs 7E[?1l>[(1,2),(1,4),(1,6),(3,2),(3,4),(3,6),(5,2),(5,4),(5,6),(7,2),(7,4),(7,6)]
+[?1h=ghci> E[?1l>Leaving GHCi.
+[?2004hakozina2@remote05:~/i471a/submit/lab7$ [?2004l
+exit
+
+Script done on 2023-11-02 17:56:12-04:00 [COMMAND_EXIT_CODE="0"]
