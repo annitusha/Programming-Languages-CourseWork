@@ -1,0 +1,348 @@
+Script started on 2023-11-16 16:34:44-05:00 [TERM="xterm-256color" TTY="/dev/pts/62" COLUMNS="56" LINES="10"]
+[?2004hakozina2@remote04:~/i471a/submit/lab8$ [7mc(lab8).[27mc(lab8).
+[?2004lbash: syntax error near unexpected token `lab8'
+[?2004hakozina2@remote04:~/i471a/submit/lab8$ erl
+[?2004lErlang/OTP 25 [erts-13.1.5] [source] [64-bit] [smp:8:8] [ds:8:8:10] [async-threads:1] [jit:ns]
+
+Eshell V13.1.5  (abort with ^G)
+1> c(lab8).
+{error,non_existing}
+2> X = 123
+2> 123 = X
+2> 123 = Y
+2> X = 123.
+* 2:1: syntax error before: 123
+2> 123 = X.
+* 1:7: variable 'X' is unbound
+3> z 
+[1]+  Stopped                 erl
+[?2004hakozina2@remote04:~/i471a/submit/lab8$ erl
+[?2004lErlang/OTP 25 [erts-13.1.5] [source] [64-bit] [smp:8:8] [ds:8:8:10] [async-threads:1] [jit:ns]
+
+Eshell V13.1.5  (abort with ^G)
+1> X = 123.
+123
+2> 123 = X.
+123
+3> 123 = Y.
+* 1:7: variable 'Y' is unbound
+4> Shapes = [ { square, 2 }, { circle, 1 }, { square, 4  } ].
+[{square,2},{circle,1},{square,4}]
+5> [{_, Side1}, _, {_, Side3}|_] = Shapes.
+[{square,2},{circle,1},{square,4}]
+6> Sides = [ Side1, Side3 ].
+[2,4]
+7> Sides.
+[2,4]
+8> Grades = [ {bill, 82}, {sue, 95}, { john, 85} ].
+[{bill,82},{sue,95},{john,85}]
+9> [{_,_,Grade3      {john,85}[C[C[C[C[C[C[C[C[C_,_,{john,85} [C[C[C[C[C[C[C[C[C[C[C[C[C|_][C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C = Grades.
+[{bill,82},{sue,95},{john,85}]
+10>     10> [_,_,{john,85}|_] = Grades.,85}|_] = Grades. ,85}|_] = Grades. ,85}|_] = Grades. ,85}|_] = Grades. G,85}|_] = Grades.r,85}|_] = Grades.a,85}|_] = Grades.d,85}|_] = Grades.e,85}|_] = Grades.3,85}|_] = Grades.[C[C[C}|_] = Grades. }|_] = Grades. G}|_] = Grades.r}|_] = Grades.a}|_] = Grades.d}|_] = Grades.e}|_] = Grades.3}|_] = Grades.[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+** exception error: no match of right hand side value 
+                    [{bill,82},{sue,95},{john,85}]
+11>     11> [_,_,{Grade3,Grade3}|_] = Grades.Grade3}|_] = Grades. Grade3}|_] = Grades. Grade3}|_] = Grades. Grade3}|_] = Grades. Grade3}|_] = Grades. Grade3}|_] = Grades. Grade3}|_] = Grades. [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+** exception error: no match of right hand side value 
+                    [{bill,82},{sue,95},{john,85}]
+12>     12> [_,_,{Grade3}|_] = Grades.[C[C] = Grades. ] = Grades. [C[C[C[C[C[C[C[C[C[C[C
+** exception error: no match of right hand side value [{bill,82},{sue,95},{john,85}]
+13>     13> [_,_,{Grade3}] = Grades.                            13> [_,_,{Grade3}|_] = Grades.                              13> [_,_,{Grade3,Grade3}|_] = Grades.                                     13> [_,_,{john,85}|_] = Grades.                               13> Grades = [ {bill, 82}, {sue, 95}, { john, 85} ].                                                    13> Sides.          13> Sides = [ Side1, Side3 ].                             13> Sides.          13> Grades = [ {bill, 82}, {sue, 95}, { john, 85} ].                                                    13> [_,_,{john,85}|_] = Grades.                               13> [_,_,{Grade3,Grade3}|_] = Grades.                                     13> [_,_,{Grade3}|_] = Grades.                              13> [_,_,{Grade3}] = Grades.                            13> Grade3 = [][C[Cj]o]h]n],] ]8]5]0]] [C.
+[john,85]
+14> Grsde3.     ade3.
+[john,85]
+15>     15> Grade3.           15> Grade3 = [john, 85].[C]. 6].[C[C
+** exception error: no match of right hand side value [john,
+                                                       86]
+16>     16> Grade3 = [john, 86].]. 6].[C = [john, 86]. 4 = [john, 86].[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[john,86]
+17>     17> Grade4 = [john, 86].                        17> Grade3 = [john, 86].                        17> Grade4 = [john, 86].              .
+[john,86]
+18>     18> Grade4.           18> Grade4 = [john, 86].                        18> Grade3 = [john, 86].                        18> Grade3.           18> Grade3 = [john, 85].                        18> [_,_,{Grade3}] = Grades.                            18> [_,_,{Grade3}|_] = Grades.                              18> [_,_,{Grade3,Grade3}|_] = Grades.                                     18> [_,_,{Grade3}|_] = Grades.                              18> [_,_,{Grade3,Grade3}|_] = Grades.[C[C,Grade3}|_] = Grades. 1,Grade3}|_] = Grades.[C[C[C[C[C[C[C[C}|_] = Grades. 2}|_] = Grades.[C,Grade2}|_] = Grades. ,Grade2}|_] = Grades. ,Grade2}|_] = Grades. ,Grade2}|_] = Grades. ,Grade2}|_] = Grades. ,Grade2}|_] = Grades. N,Grade2}|_] = Grades.a,Grade2}|_] = Grades.m,Grade2}|_] = Grades.e,Grade2}|_] = Grades.[C[C[C[C[C[C[C}|_] = Grades. }|_] = Grades. }|_] = Grades. }|_] = Grades. }|_] = Grades. }|_] = Grades. G}|_] = Grades.r}|_] = Grades.a}|_] = Grades.d}|_] = Grades.e}|_] = Grades.[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[{bill,82},{sue,95},{john,85}]
+19> Grade3 n= [][C[CN]a]m]e].]] ,] ]G]r]a]d]e]= [Name, Grade] [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C.
+[john,85]
+20> Grade3.
+[john,85]
+21> Grades = [ {bill, 82}, {sue, 95}, { john, 85} ].
+[{bill,82},{sue,95},{john,85}]
+22> [{_,Grade1}[C[C[C[C[C[C[C[C[C[C,_ {_,Grade2}[C[C[C[C[C[C[C[C[C[C,{_,Grade3}[C[C[C[C[C[C[C[C[C[C|_][C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C = Grades.
+** exception error: no match of right hand side value 
+                    [{bill,82},{sue,95},{john,85}]
+23>     23> [{_,Grade1},{_,Grade2},{_,Grade3}|_] = Grades.[C[C[C[C[C[C[C[C[C[C[C[C[C[C}|_] = Grades. 6}|_] = Grades.},{_,Grade6}|_] = Grades. 5},{_,Grade6}|_] = Grades.[C},{_,Grade5},{_,Grade6}|_] = Grades. 4},{_,Grade5},{_,Grade6}|_] = Grades.[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+** exception error: no match of right hand side value [{bill,82},{sue,95},{john,85}]
+24>     24> [{_,Grade4},{_,Grade5},{_,Grade6}|_] = Grades. {_,Grade6}|_] = Grades. {_,Grade5}, {_,Grade6}|_] = Grades.[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C] = Grades. ] = Grades.  ] = Grades.[C {_,Grade4}, {_,Grade5}, {_,Grade6} ] = Grades.[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+** exception error: no match of right hand side value 
+                    [{bill,82},{sue,95},{john,85}]
+25> 
+[2]+  Stopped                 erl
+[?2004hakozina2@remote04:~/i471a/submit/lab8$ erl
+[?2004lErlang/OTP 25 [erts-13.1.5] [source] [64-bit] [smp:8:8] [ds:8:8:10] [async-threads:1] [jit:ns]
+
+Eshell V13.1.5  (abort with ^G)
+1> Grades = [ {bill, 82}, {sue, 95}, { john, 85} ].
+[{bill,82},{sue,95},{john,85}]
+2>  {_,Grade4}, {_,Grade5}, {_,Grade6} ] = Grades.
+* 1:37: syntax error before: ']'
+2>    2>  {_,Grade4}, {_,Grade5}, {_,Grade6} ] = Grades.[ {_,Grade4}, {_,Grade5}, {_,Grade6} ] = Grades.[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[{bill,82},{sue,95},{john,85}]
+3> Numbers = [Grade4, Grade5, Grade6][C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C.
+"R_U"
+4> io:format("~w~n", [Points]).
+* 1:20: variable 'Points' is unbound
+5>    5> io:format("~w~n", [Points]).                               5> Numbers = [Grade4, Grade5, Grade6].[C = [Grade4, Grade5, Grade6].  = [Grade4, Grade5, Grade6].  = [Grade4, Grade5, Grade6].  = [Grade4, Grade5, Grade6].  = [Grade4, Grade5, Grade6].  = [Grade4, Grade5, Grade6].  = [Grade4, Grade5, Grade6]. P = [Grade4, Grade5, Grade6].o = [Grade4, Grade5, Grade6].i = [Grade4, Grade5, Grade6].n = [Grade4, Grade5, Grade6].t = [Grade4, Grade5, Grade6].s = [Grade4, Grade5, Grade6].[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+"R_U"
+6>    6> Points = [Grade4, Grade5, Grade6].                                     6> io:format("~w~n", [Points]).
+[82,95,85]
+ok
+7> increment =             Grade4.
+82
+8> Grade4 = Grade4+  + 2
+8>    8> Grade4 = Grade4 + 2.                    .
+** exception error: no match of right hand side value 84 
+9> Grade1 = Grade4 + 2
+9> .
+84
+10> Grade 2  2 = Grade5+2
+10> .
+97
+11> Grade3 = Grade6+2
+11> .\ 
+87
+12> Grades = [ {bill, 82}, {sue, 95}, { john, 85} ].2 = [ {bill, 82}, {sue, 95}, { john, 85} ].[C[C[C[C[C[C[C[C[C[C[C[C[C[C}, {sue, 95}, { john, 85} ]. }, {sue, 95}, { john, 85} ]. G}, {sue, 95}, { john, 85} ].r}, {sue, 95}, { john, 85} ].a}, {sue, 95}, { john, 85} ].d}, {sue, 95}, { john, 85} ].e}, {sue, 95}, { john, 85} ]. [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C1}, {sue, 95}, { john, 85} ].[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C}, { john, 85} ].  [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C}, { john, 85} ].  [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CG}, { john, 85} ]. [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cr}, { john, 85} ].[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ca}, { john, 85} ].[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cd}, { john, 85} ].[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ce}, { john, 85} ].[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C2}, { john, 85} ].[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[C[C[C[C[C} ]. } ]. } ]. } ]. } ]. } ]. } ]. } ]. } ]. } ]. } ]. } ]. } ]. } ]. } ]. } ]. } ]. } ].                                            12> .     12> Grades2 = [ {bill, Grade1}, {sue, G} ].                                       .
+* 1:1: syntax error before: '.'
+12> Grades2 = [ {bill, Grade1}, {sue, Grade2}, { john, 8 Grade3}[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C][C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C.
+[{bill,84},{sue,97},{john,87}]
+13> 
+[3]+  Stopped                 erl
+[?2004hakozina2@remote04:~/i471a/submit/lab8$ erl
+[?2004lErlang/OTP 25 [erts-13.1.5] [source] [64-bit] [smp:8:8] [ds:8:8:10] [async-threads:1] [jit:ns]
+
+Eshell V13.1.5  (abort with ^G)
+1> c(lab8_sol)[C[C[C[C[C[C[C[C[C[C.
+lab8_sol.erl:6:2: Warning: export_all flag enabled - all functions will be exported
+%    6| -compile(export_all).
+%     |  ^
+
+{ok,lab8_sol}
+2> lab8_sol:perimeter({circle, 1}).
+6.28318
+3> lab8_sol:perimeter({square, 2}).
+8
+4> lab8_sol:perimeter({rectangle, 2, 3}).
+** exception error: no function clause matching 
+                    lab8_sol:perimeter({rectangle,2,
+                                        3}) (lab8_sol.erl, line 22)
+5>    5> lab8_sol:perimeter({rectangle, 2, 3}).                                         5> lab8_sol:perimeter({square, 2}).                                   5> lab8_sol:perimeter({circle, 1}).                                   5> c(lab8_sol).
+lab8_sol.erl:6:2: Warning: export_all flag enabled - all functions will be exported
+%    6| -compile(export_all).
+%     |  ^
+
+{ok,lab8_sol}
+6>    6> c(lab8_sol).               6> lab8_sol:perimeter({rectangle, 2, 3}).                                         6> c(lab8_sol).
+lab8_sol.erl:6:2: Warning: export_all flag enabled - all functions will be exported
+%    6| -compile(export_all).
+%     |  ^
+
+{ok,lab8_sol}
+7>    7> c(lab8_sol).
+lab8_sol.erl:6:2: Warning: export_all flag enabled - all functions will be exported
+%    6| -compile(export_all).
+%     |  ^
+
+{ok,lab8_sol}
+8>    8> c(lab8_sol).
+lab8_sol.erl:52:6: syntax error before: 
+%   52|   'F';
+%     |      ^
+
+lab8_sol.erl:6:2: Warning: export_all flag enabled - all functions will be exported
+%    6| -compile(export_all).
+%     |  ^
+
+error
+9>    9> c(lab8_sol).
+lab8_sol.erl:52:6: syntax error before: 
+%   52|   'F';
+%     |      ^
+
+lab8_sol.erl:6:2: Warning: export_all flag enabled - all functions will be exported
+%    6| -compile(export_all).
+%     |  ^
+
+error
+10>     10> c(lab8_sol).
+lab8_sol.erl:6:2: Warning: export_all flag enabled - all functions will be exported
+%    6| -compile(export_all).
+%     |  ^
+
+lab8_sol.erl:51:14: Warning: variable 'POints' is unused
+%   51| letter_grade(POints) ->
+%     |              ^
+
+{ok,lab8_sol}
+11> lab8_sol:letter_grade(91).
+'A'
+12> lab8_sol:letter_grade(90).
+'F'
+13>     13> lab8_sol:letter_grade(90).                              13> lab8_sol:letter_grade(91).                              13> c(lab8_sol).
+lab8_sol.erl:6:2: Warning: export_all flag enabled - all functions will be exported
+%    6| -compile(export_all).
+%     |  ^
+
+lab8_sol.erl:51:14: Warning: variable 'Points' is unused
+%   51| letter_grade(Points) ->
+%     |              ^
+
+{ok,lab8_sol}
+14>     14> c(lab8_sol).                14> lab8_sol:letter_grade(90).                              14> lab8_sol:letter_grade(91).
+'A'
+15>     15> lab8_sol:letter_grade(91).                              15> c(lab8_sol).                15> lab8_sol:letter_grade(90).
+'B'
+16> lab8_sol:letter_grade(81).
+'B'
+17> lab8_sol:letter_grade(80).
+'C'
+18> lab8_sol:letter_grade(75).
+'C'
+19> lab8_sol:letter_grade(65).
+'D'
+20> 
+BREAK: (a)bort (A)bort with dump (c)ontinue (p)roc info (i)nfo
+       (l)oaded (v)ersion (k)ill (D)b-tables (d)istribution
+^Z
+[4]+  Stopped                 erl
+[?2004hakozina2@remote04:~/i471a/submit/lab8$ erl
+[?2004lErlang/OTP 25 [erts-13.1.5] [source] [64-bit] [smp:8:8] [ds:8:8:10] [async-threads:1] [jit:ns]
+
+Eshell V13.1.5  (abort with ^G)
+1> c(lab8_sol)[C[C[C[C[C[C[C[C[C[C.
+lab8_sol.erl:6:2: Warning: export_all flag enabled - all functions will be exported
+%    6| -compile(export_all).
+%     |  ^
+
+lab8_sol.erl:51:14: Warning: variable 'Points' is unused
+%   51| letter_grade(Points) ->
+%     |              ^
+
+{ok,lab8_sol}
+2> lab8_sol:letter_grade(55).
+'F'
+3>    3> lab8_sol:letter_grade(55).                             3> c(lab8_sol).
+lab8_sol.erl:60:3: syntax error before: 'end'
+%   60|   end.
+%     |   ^
+
+lab8_sol.erl:6:2: Warning: export_all flag enabled - all functions will be exported
+%    6| -compile(export_all).
+%     |  ^
+
+lab8_sol.erl:51:14: Warning: variable 'Points' is unused
+%   51| letter_grade(Points) ->
+%     |              ^
+
+error
+4>    4> c(lab8_sol).
+lab8_sol.erl:60:3: syntax error before: 'end'
+%   60|   end.
+%     |   ^
+
+lab8_sol.erl:6:2: Warning: export_all flag enabled - all functions will be exported
+%    6| -compile(export_all).
+%     |  ^
+
+lab8_sol.erl:51:14: Warning: variable 'Points' is unused
+%   51| letter_grade(Points) ->
+%     |              ^
+
+error
+5>    5> c(lab8_sol).
+lab8_sol.erl:6:2: Warning: export_all flag enabled - all functions will be exported
+%    6| -compile(export_all).
+%     |  ^
+
+lab8_sol.erl:51:14: Warning: variable 'Points' is unused
+%   51| letter_grade(Points) ->
+%     |              ^
+
+{ok,lab8_sol}
+6> if  lab8_sol:if_letter_grade(80 5)[C[C[C[C.
+'B'
+7>    7> lab8_sol:if_letter_grade(85).                                7> c(lab8_sol).
+lab8_sol.erl:6:2: Warning: export_all flag enabled - all functions will be exported
+%    6| -compile(export_all).
+%     |  ^
+
+lab8_sol.erl:51:14: Warning: variable 'Points' is unused
+%   51| letter_grade(Points) ->
+%     |              ^
+
+{ok,lab8_sol}
+8> Shapes = lab8_sol:shapes_data().
+[{square,2},
+ {circle,1},
+ {square,1},
+ {square,3},
+ {circle,2},
+ {square,4}]
+9> PID1 = lab8_sol:start_data_server(Shapes).
+<0.110.0>
+10> lab8_sol:data_client(PID1, fun (X) -> X end).
+[{square,2},
+ {circle,1},
+ {square,1},
+ {square,3},
+ {circle,2},
+ {square,4}]
+11> F = fun ({T, S}) -> {T, S*3} end.
+#Fun<erl_eval.42.3316493>
+12> lab8_sol:data_client(PID1, fun (Shapes) -> lists:map (F, Shapes) end).
+[{square,6},
+ {circle,3},
+ {square,3},
+ {square,9},
+ {circle,6},
+ {square,12}]
+13> lab8_sol:stop_data_server(PID1).
+stop
+14> F2 = fun ({Name, Grade}[C[C[C[C[C[C[C[C[C[C[C[C[C)[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C -> (Name, lab8_sol:letter_g rade     [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C  [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C _g rade(Grade)[C[C[C[C[C[C[C }END   end.
+* 1:34: syntax error before: ','
+14>     14> F2 = fun ({Name, Grade}) -> (Name, lab8_sol:letter_grade(Grade) }end.
+* 1:34: syntax error before: ','
+14>     14> F2 = fun ({Name, Grade}) -> (Name, lab8_sol:letter_grade(Grade) }end.[C[C[CName, lab8_sol:letter_grade(Grade) }end. {Name, lab8_sol:letter_grade(Grade) }end.[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+#Fun<erl_eval.42.3316493>
+15> F2({tom, 78}).
+{tom,'C'}
+16> gRA   Grades = lab8_sol:grades_data()[C[C.
+[{bill,82.0},
+ {sue,95},
+ {john,85},
+ {joe,73},
+ {mary,65},
+ {tom,55}]
+17> PID2 = lab8_sol:start_data_server(Grades)[C[C[C[C[C[C[C[C.
+<0.121.0>
+18> lab8_sol:data_client(PID2, fun (X)[C[C[C -> X end)[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C.
+[{bill,82.0},
+ {sue,95},
+ {john,85},
+ {joe,73},
+ {mary,65},
+ {tom,55}]
+19>     19> lab8_sol:data_client(PID2, fun (X) -> X end).             Shapes)[C[C[C[C[C[C[C[C -> lists:map (F2, Shapes)[C[C[C[C[C[C[C[C[C[C[C[C end)[A[C[C[C[C[C[C[C
+.
+[{bill,'B'},
+ {sue,'A'},
+ {john,'B'},
+ {joe,'C'},
+ {mary,'D'},
+ {tom,'F'}]
+20> lab8_sol:stop_data_server(PID2)[C[C[C[C[C[C.
+stop
+21> 
+[5]+  Stopped                 erl
+[?2004hakozina2@remote04:~/i471a/submit/lab8$ [?2004l
+exit
+There are stopped jobs.
+[?2004hakozina2@remote04:~/i471a/submit/lab8$ [7mcd ~/i471?[27mcd ~/i471?[1P?a?
+[?2004lbash: cd: /home/akozina2/
