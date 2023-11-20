@@ -50,8 +50,27 @@ data PostfixExpr =
 --    + When there are no unprocessed tokens, the stack should contain
 --      a single PostfixExpr containing the value to be returned.
 postfixExpr :: String -> PostfixExpr
+postfixExpr postfix = head $ foldl processToken [] (words postfix)
+  where
+    processToken :: [PostfixExpr] -> String -> [PostfixExpr]
+    processToken stack token
+      | token `elem` ["+", "-", "*"] = applyOperator token stack
+      | token == "uminus" = applyUminus stack
+      | otherwise = Leaf (read token) : stack
 
-postfixExpr postfix = error "TODO"
+    applyOperator :: String -> [PostfixExpr] -> [PostfixExpr]
+    applyOperator op (y:x:rest) =
+      case op of
+        "+" -> Add x y : rest
+        "-" -> Sub x y : rest
+        "*" -> Mul x y : rest
+        _   -> error "Unsupported operator"
+
+    applyUminus :: [PostfixExpr] -> [PostfixExpr]
+    applyUminus (x:rest) = Uminus x : rest
+    applyUminus _ = error "Not enough operands for uminus"
+    
+--postfixExpr postfix = error "TODO"
 
 testPostfixExpr = do
   print "******* test postfixExpr"

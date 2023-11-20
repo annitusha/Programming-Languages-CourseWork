@@ -81,13 +81,13 @@ testMember = do
 --   Run:   run these tests when no tests are marked Only.
 --   Skip:  skip these tests.
 allTests = [
-    (Skip testToSingletonLists),
-    (Skip testListMap),
-    (Skip testMember),
-    (Skip testEvalIntExpr),
-    (Skip testEvalIdExpr),
-    (Skip testEvalMaybeExpr),
-    (Skip testPostfixExpr)
+    (Run testToSingletonLists),
+    (Run testListMap),
+    (Run testMember),
+    (Run testEvalIntExpr),
+    (Run testEvalIdExpr),
+    (Run testEvalMaybeExpr),
+    (Run testPostfixExpr)
   ]
 
 
